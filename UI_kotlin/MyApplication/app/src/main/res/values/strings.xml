@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="welcome">Welcome to GYMBUDDY</string>
+    <string name="logo"></string>
+    <string name="comp">Your personal training companion</string>
+    <string name="login">Log in</string>
+    <string name="sign_in">Sign in</string>
+    <string name="support">Support</string>
+    <string name="username">Username</string>
+    <string name="pw">Password</string>
+    <string name="mail">E-mail</string>
+    <string name="conf_pass">Confirm password</string>
+</resources>
