@@ -10,4 +10,14 @@
     <string name="pw">Password</string>
     <string name="mail">E-mail</string>
     <string name="conf_pass">Confirm password</string>
+    <string name="setup_prof">Set up your profile</string>
+    <string name="edit_stats">Edit stats</string>
+    <string name="up_video">Upload video</string>
+    <string name="cont">Continue</string>
+    <string name="choose_a_category">Choose a category</string>
+    <string name="choose_exercise">Choose an exercise</string>
+    <string name="chest">Chest</string>
+    <string name="arms">Arms</string>
+    <string name="back">Back</string>
+
 </resources>
