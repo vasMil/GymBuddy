@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@color/main_color" >
+
+        <TextView
+            android:id="@+id/ranking"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aoboshi_one_regular"
+            android:text="@string/ranking"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/choose"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="@string/pick_exe"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/deadlift"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="@string/deadlift"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pull_up"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="@string/pull_ups"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bench_row"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="@string/bench_row"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/lat_pulldown"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="135dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="@string/lat_pulldown"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/seated"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="70dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="@string/seated"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+
+
+
+
+
+
+
+    
+
+</LinearLayout>
