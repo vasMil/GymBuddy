@@ -33,6 +33,16 @@
     <string name="bench_row">Bench Row</string>
     <string name="lat_pulldown">Lat Pulldown</string>
     <string name="seated">Seated Cable Row</string>
+    <string name="enter_kgs">Enter how many kgs you attempt</string>
+    <string name="kgs">kgs</string>
+    <string name="upload">Upload a video as proof of your success!</string>
+    <string name="choose_from">Choose from your collection.</string>
+    <string name="upload_video">Upload video</string>
+    <string name="dumbbell">Dumbbell bench press</string>
+
+
+
+
 
 
 
