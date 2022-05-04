@@ -51,12 +51,28 @@
     <string name="confirm">Confirm</string>
     <string name="cancel">Cancel</string>
     <string name="watch_video">Watch video</string>
-
-
-
-
-
-
+    <string name="home">Home</string>
+    <string name="start">Start a workout</string>
+    <string name="view">View workout plan</string>
+    <string name="find">Find a personal trainer</string>
+    <string name="search">Search for a GymBuddy</string>
+    <string name="workout">Workout</string>
+    <string name="choose">Choose a workout routine</string>
+    <string name="pull">Pull</string>
+    <string name="push">Push</string>
+    <string name="legs">Legs</string>
+    <string name="none">null</string>
+    <string name="workout2">Workout - Pull</string>
+    <string name="choose2">Choose an exercise</string>
+    <string name="dips">Dips</string>
+    <string name="pull_ups">Pull Ups</string>
+    <string name="bench_row">Bench Row</string>
+    <string name="lat_pulldown">Lat Pulldown</string>
+    <string name="seated_cable">Seated Cable Row</string>
+    <string name="french_press">French Press</string>
+    <string name="triceps_pressdown">Triceps Pressdown</string>
+    <string name="congratulations">Congratulations! You completed the workout in 1h 28min.</string>
+    <string name="keep_it">Keep It Up!</string>
 
 
 </resources>
