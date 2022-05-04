@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="welcome">Welcome to GYMBUDDY</string>
-    <string name="logo"></string>
     <string name="comp">Your personal training companion</string>
     <string name="login">Log in</string>
     <string name="sign_in">Sign in</string>
@@ -19,5 +18,45 @@
     <string name="chest">Chest</string>
     <string name="arms">Arms</string>
     <string name="back">Back</string>
+    <string name="find_program">Find your Program</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="w_h">Insert your weight and height:</string>
+    <string name="information">*This information will remain private. The only use for it is to find a program that will fit you best!</string>
+    <string name="train_frequency">How often will you be training this week?</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="days">days</string>
+    <string name="next">Continue</string>
+    <string name="recommendations">Recommended workout plan</string>
+    <string name="day_1">Day 1: Chest and Arms</string>
+    <string name="day_2">Day 2: Back and Shoulders</string>
+    <string name="day_3">Day 3: Legs and abs</string>
+    <string name="different_workout">Choose another workout plan</string>
+    <string name="ranking">Ranking</string>
+    <string name="pick_exe">Choose an exercise</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="pull_ups">Pull Ups</string>
+    <string name="bench_row">Bench Row</string>
+    <string name="lat_pulldown">Lat Pulldown</string>
+    <string name="seated">Seated Cable Row</string>
+    <string name="enter_kgs">Enter how many kgs you attempt</string>
+    <string name="kgs">kgs</string>
+    <string name="upload">Upload a video as proof of your success!</string>
+    <string name="choose_from">Choose from your collection.</string>
+    <string name="upload_video">Upload video</string>
+    <string name="dumbbell">Dumbbell bench press</string>
+    <string name="confirm_upload">Confirm Upload</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="watch_video">Watch video</string>
+
+
+
+
+
+
+
 
 </resources>
