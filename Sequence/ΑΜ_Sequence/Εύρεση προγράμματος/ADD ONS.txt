@@ -3,10 +3,11 @@ enterData()
 submit()
 acceptWorkoutPlan()
 reasonOfDisaproval()
+showWorkoutPlan()
 
-neo class SearchForWorkoutPlan
+ searchForWorkoutPlan
 homepageUI
-DataPage--->validateData()
+InsertDataPage--->validateData()
 ValidationPage--->retValidation()
 DataSubmitPage---->searchWorkoutPlan()
 ViewSuggestedWorkoutPlan
