@@ -1,0 +1,14 @@
+athlete:
+enterData()
+submit()
+acceptWorkoutPlan()
+reasonOfDisaproval()
+
+neo class SearchForWorkoutPlan
+homepageUI
+DataPage--->validateData()
+ValidationPage--->retValidation()
+DataSubmitPage---->searchWorkoutPlan()
+ViewSuggestedWorkoutPlan
+WorkoutPlan
+CommentSubmissionForm---->sendToTrainer()
