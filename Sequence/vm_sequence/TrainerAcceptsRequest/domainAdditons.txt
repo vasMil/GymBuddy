@@ -1,0 +1,9 @@
+class collaborationRequest:
+Το αίτημα συναργασίας που κάνει ο athlete στον trainer.
+attributes: athleteId, athleteName, date, message
+
+class notification:
+Αποθηκεύεται στη βάση δεδομένων μέχρι ο χρήστης τον οποίο αφορά η ειδοποίηση να συνδεθεί στο σύστημα.
+attributes: date, userName, userId, message
+
+Πρόσθεσε attribute στην κλάση Athlete: trainer: Trainer
