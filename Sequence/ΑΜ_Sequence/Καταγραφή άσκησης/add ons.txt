@@ -1,0 +1,12 @@
+athlete:
+chooseAnExercise()
+readyToStart()
+changeWeight()
+startTime()
+completeExercise()
+
+
+system:
+newWeights()
+endTime()
+showGraphs()
