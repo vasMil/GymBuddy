@@ -4,9 +4,8 @@ readyToStart()
 changeWeight()
 startTime()
 completeExercise()
-
+videoRequest()
 
 system:
 newWeights()
-endTime()
-showGraphs()
+
