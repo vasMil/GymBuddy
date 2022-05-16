@@ -1,0 +1,9 @@
+athlete
+chooseExcercise()
+findProgram()
+
+
+workout session:
+failedWorkout()
+successfullWorkout()
+recordExcercise()
