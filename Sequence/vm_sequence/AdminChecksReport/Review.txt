@@ -1,0 +1,3 @@
+στο previewReport() λειπει ενα r
+το database μηπως να ειναι reportService?
+εχεις ξεχασει το enum στο alt του violation
