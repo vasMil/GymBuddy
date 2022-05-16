@@ -1,11 +1,13 @@
 athlete:
 chooseAnExercise()
 readyToStart()
-changeWeight()
-startTime()
+changeKg()
+startExcercise()
 completeExercise()
-videoRequest()
+playVideo()
 
 system:
-newWeights()
-
+newKg()
+sendErrorMessage()
+displayFinishButton()
+endExcercise()

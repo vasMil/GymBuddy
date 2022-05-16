@@ -1,9 +1,9 @@
 athlete
-chooseExcercise()
 findProgram()
 
 
-workout session:
+workout sesssion
 failedWorkout()
 successfullWorkout()
 recordExcercise()
+endWorkoutTime()
