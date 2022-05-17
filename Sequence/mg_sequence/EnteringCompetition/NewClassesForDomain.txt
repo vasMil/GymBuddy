@@ -1,8 +1,7 @@
-- Νέα κλάση Request που θα αναφέρεται στο αίτημα που δημιουργείται όταν ο αθλητής κάνει upload ένα βίντεο με την προσπάθειά του για να καταταχθεί στον διαγωνισμό.
 
 
 
 
 
-- Mέθοδος ParticipateInComp(), RegisterAttempt() στην κλάση του αθλητή.
-- Μέθοδος DispCategories(), DispExercises(int name) στην κλάση ExersiceCategory.
+
+1η Απορία: για την displayExercises(category) 
