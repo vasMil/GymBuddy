@@ -7,3 +7,7 @@ failedWorkout()
 successfullWorkout()
 recordExcercise()
 endWorkoutTime()
+displayExcerciseMap()
+
+
+recordExcercise()
