@@ -14,3 +14,11 @@
 Εναλλακτική ροή 2
 6.1 Το σύστημα διαπιστώνει ότι το αίτημα απορρίφθηκε.
 6.2 Το σύστημα εμφανίζει μήνυμα στον αθλητή για να τον ενημερώσει για την αποτυχία της διαδικασίας.
+
+ΚΛΑΣΕΙΣ
+MyProfileBoundary
+UploadDocumentsBoundary
+TrainerApplication
+ApplicationCompleteBoundary
+ApplicationDeniedBoundary
+InvalidDocumentsBoundary
