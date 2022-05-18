@@ -22,4 +22,14 @@
 Εναλλακτική Ροή 3:
 9.1 Το σύστημα διαπιστώνει ότι όλες οι ημέρες προπόνησης έχουν συμπληρωθεί και εμφανίζει το ολοκληρωμένο πρόγραμμα.
 
+ΚΛΑΣΕΙΣ
+HomePageBoundary
+CreateProgrammBoundary
+ErrorMessageBoundary
+SetupDayOfWorkoutBoundary
+categoryService: CategoryService
+SuggestedListOfExercisesBoundary
+ExerciseCategory
+WorkoutProgrammBoundary
+
 
