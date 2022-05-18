@@ -1,3 +1,6 @@
 στο previewReport() λειπει ενα r
 το database μηπως να ειναι reportService?
 εχεις ξεχασει το enum στο alt του violation
+
+1.το banUser() δεν χρειαζεται ορισμα ? (accused)
+2. ισως να μην χρειαζεται να υλοποιηθουν σαν μεθοδοι το reportDeleted() και notificationSent() αλλα σαν messages απο αποψη χρόνου στον κωδικα
