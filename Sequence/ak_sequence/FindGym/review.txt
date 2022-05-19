@@ -1,0 +1,13 @@
+1) Το viewGymSNearby() λογικά πρέπει να είναι πιο πάνω από το fetchGyms()
+
+2) Χαζομάρα είναι άλλα μπορείς την απάντηση στο fetchGyms() να την κάνεις list<Gym>
+
+3) Το displayGyms() μ φαίνεται πιο λογικό από τη στιγμή π έχεις πάει σε άλλο boundary (gymInArea) να είναι self message στο gymInArea.
+
+4) Το ProfileBoundary -> MyProfileBoundary
+
+5) Τώρα είδα το changeGym() μήπως είναι καλύτερα να ενημερώνει και το entity του Αθλητή? Ουσιαστικά ένα ακόμα method από το gymInArea?
+
+6) Λόγω του βήματος 4.2 (Εναλλακτική Ροή 1) το μεγάλο alt έχω την εντύπωση θα ήταν πιο σωστό να είναι loop με συνθήκη If invalid address. (Πρέπει να ξεκινάει αμέσως πριν το onSearch(address, maxDistance).
+
+7) Το ίδιο θέμα υπάρχει και στην Εναλλακτική Ροή 3. Επομένως η συνθήκη του loop γίνεται If invalid address || gymInArea.gyms.is_empty()
