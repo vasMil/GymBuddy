@@ -1,0 +1,13 @@
+athlete
+findProgram()
+
+
+workout sesssion
+failedWorkout()
+successfullWorkout()
+recordExcercise()
+endWorkoutTime()
+displayExcerciseMap()
+
+
+recordExcercise()

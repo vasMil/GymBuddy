@@ -1,0 +1,14 @@
+athlete:
+chooseAnExercise()
+readyToStart()
+changeKg()
+startExcercise()
+completeExercise()
+playVideo()
+
+workout ses:
+updateKg()
+sendErrorMessage()
+displayFinishButton()
+endExcercise()
+athleteExcerciseStats pedio

@@ -1,0 +1,25 @@
+<<interface>> ViolationCategory:
+name: string
+id: int
+importance: uint_8 (1,3)
+rule: string;
+message: string;
+getWarningMessage();
+getRuleViolated();
+
+Θα γίνεται implement από:
+-> nudity
+-> offensive language
+-> violence
+-> dangerousAct
+
+class Report:
+Αντί για videoId: int -> video: Video
+Αντί για userId: int -> user: User
+Πρόσθεσε attribute type: ViolationCategory.
+
+class User:
+Βάλε ακόμα ένα attribute isBanned.
+και μια λιστα από request και κλάση Request
+
+class Violation: από type: enum σε type: ViolationCategory
