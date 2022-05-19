@@ -20,5 +20,6 @@ class Report:
 
 class User:
 Βάλε ακόμα ένα attribute isBanned.
+και μια λιστα από request και κλάση Request
 
 class Violation: από type: enum σε type: ViolationCategory
