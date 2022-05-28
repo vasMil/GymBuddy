@@ -3,6 +3,7 @@ package com.example.myapplication
 interface ExerciseCategory {
     var name: String
     var exercises: MutableList<Exercise>?
+    var image: Int
 
     fun getExercise(weight: Int, height: Int, level: UserLevel): Exercise?
 

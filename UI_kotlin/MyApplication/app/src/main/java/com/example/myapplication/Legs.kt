@@ -3,6 +3,7 @@ package com.example.myapplication
 class Legs : ExerciseCategory {
     override var name = "Legs"
     override var exercises: MutableList<Exercise>? = null
+    override var image: Int = R.drawable.category_placeholder
 
     override fun getExercise(weight: Int, height: Int, level: UserLevel): Exercise? {
         exercises?.forEach { exercise ->
