@@ -37,9 +37,6 @@
     <string name="ranking">Ranking</string>
     <string name="pick_exe">Choose an exercise</string>
     <string name="deadlift">Deadlift</string>
-    <string name="pull_ups">Pull Ups</string>
-    <string name="bench_row">Bench Row</string>
-    <string name="lat_pulldown">Lat Pulldown</string>
     <string name="seated">Seated Cable Row</string>
     <string name="enter_kgs">Enter how many kgs you attempt</string>
     <string name="kgs">kgs</string>
@@ -73,6 +70,7 @@
     <string name="triceps_pressdown">Triceps Pressdown</string>
     <string name="congratulations">Congratulations! You completed the workout in 1h 28min.</string>
     <string name="keep_it">Keep It Up!</string>
+    <string name="imageprof">ImageProf</string>
 
 
 </resources>

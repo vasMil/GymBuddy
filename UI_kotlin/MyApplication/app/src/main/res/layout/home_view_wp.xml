@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/home_img"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
-    android:background="@drawable/Home_img">
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        app:cardBackgroundColor="@color/main_color" >
+        app:cardBackgroundColor="@color/main_color">
+
         <TextView
             android:id="@+id/home_view"
             android:layout_width="90dp"
@@ -30,11 +31,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="80dp"
-        app:backgroundTint="@color/main_color"
         android:text="@string/start"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:backgroundTint="@color/main_color"
         tools:ignore="TextContrastCheck" />
 
     <Button
@@ -43,36 +44,39 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        app:backgroundTint="@color/main_color"
         android:text="@string/view"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:backgroundTint="@color/main_color"
         tools:ignore="TextContrastCheck" />
+
     <Button
         android:id="@+id/home_btn3"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        app:backgroundTint="@color/main_color"
         android:text="@string/find"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:backgroundTint="@color/main_color"
         tools:ignore="TextContrastCheck" />
+
     <Button
         android:id="@+id/home_btn4"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="40dp"
-        app:backgroundTint="@color/main_color"
         android:text="@string/search"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
+        app:backgroundTint="@color/main_color"
         tools:ignore="TextContrastCheck" />
+
     <Button
         android:id="@+id/home_btn5"
         android:layout_width="114dp"
@@ -81,8 +85,8 @@
         android:layout_marginTop="190dp"
         android:text="@string/support"
         android:textAllCaps="false"
-        app:backgroundTint="#00FFFFFF"
         android:textSize="16sp"
+        app:backgroundTint="#00FFFFFF"
         tools:ignore="TextContrastCheck" />
 
 
