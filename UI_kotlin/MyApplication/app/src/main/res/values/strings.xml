@@ -71,6 +71,11 @@
     <string name="congratulations">Congratulations! You completed the workout in 1h 28min.</string>
     <string name="keep_it">Keep It Up!</string>
     <string name="imageprof">ImageProf</string>
+    <string name="report_list">Report List</string>
+    <string name="report1">Report 1</string>
+    <string name="report2">Report 2</string>
+    <string name="report3">Report 3</string>
+
 
 
 </resources>
