@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="@drawable/Home_img">
+    android:background="@drawable/home_img">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

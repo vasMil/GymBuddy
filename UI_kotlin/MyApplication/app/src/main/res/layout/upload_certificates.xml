@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/uploadCertificates"
+        android:id="@+id/uploadCertificatesBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text='upload certificates'
@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"  />
 
     <Button
-        android:id="@+id/sendBut"
+        android:id="@+id/sendBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text='send'
