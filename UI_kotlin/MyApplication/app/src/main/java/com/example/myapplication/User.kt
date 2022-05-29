@@ -4,7 +4,7 @@ import androidx.core.app.ActivityCompat
 import java.util.jar.Manifest
 
 open class User(name: String, id: Int) : UserInterface {
-    private var name = name
+    var name = name
     override val id = id
     var location: Pair<Int, Int>? = null
     var age: Int? = null

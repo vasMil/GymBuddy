@@ -9,7 +9,7 @@ class authService {
             return Admin(staticUserId)
         }
         if(username == "athlete" && password == "athlete") {
-            return Athlete("athlete", staticUserId)
+            return Athlete("athlete", staticUserId, 67, 170)
         }
         if(username == "trainer" && password == "trainer") {
             return Trainer("trainer", staticUserId)
