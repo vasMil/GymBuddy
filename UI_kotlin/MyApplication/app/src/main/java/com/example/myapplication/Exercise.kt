@@ -1,8 +1,10 @@
 package com.example.myapplication
 
+import java.io.Serializable
+
 class Exercise(
     name: String, sets: Int, reps: Int, minLevel: UserLevel
-) {
+) : Serializable {
     var name = name
     var minLevel = minLevel
     var maxWeight: Int? = null

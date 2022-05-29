@@ -1,8 +1,10 @@
 package com.example.myapplication
 
-interface ExerciseCategory {
+import java.io.Serializable
+
+interface ExerciseCategory : Serializable{
     var name: String
-    var exercises: MutableList<Exercise>?
+    var exercises: MutableList<Exercise>
     var image: Int
 
     fun getExercise(weight: Int, height: Int, level: UserLevel): Exercise?

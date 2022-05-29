@@ -1,12 +1,14 @@
 package com.example.myapplication
 
+import java.io.Serializable
+
 class Chest : ExerciseCategory {
     override var name = "Chest"
-    override var exercises: MutableList<Exercise>? = null
+    override var exercises = mutableListOf<Exercise>()
     override var image: Int = R.drawable.category_placeholder
 
     override fun getExercise(weight: Int, height: Int, level: UserLevel): Exercise? {
-        exercises?.forEach { exercise ->
+        exercises.forEach { exercise ->
             if (exercise.canRecommend(weight, height, level)) {
                 return exercise
             }
@@ -15,16 +17,15 @@ class Chest : ExerciseCategory {
     }
 
     override fun fetchExercises() {
-        var standingBumbellCurl = Exercise("Standing Bumbell Curl", 4, 10, UserLevel.BEGINNER)
-        var standingBarbellCurl = Exercise("Standing Barbell Curl", 4, 10, UserLevel.BEGINNER)
-        var ezBarPreacherCurl = Exercise("EZ-Bar Preacher Curl", 4, 10, UserLevel.BEGINNER, 130, 0)
-        var crucifixCurl = Exercise("Crucifix Curl", 3, 8, UserLevel.INTERMEDIATE,0, 150)
-        var hammerCurl = Exercise("Hammer Curl", 4, 10, UserLevel.BEGINNER)
-        var tricepsPressdown = Exercise("Triceps Pressdown", 3, 8, UserLevel.BEGINNER, 0, 150)
-        var ezBarSkullCrushers = Exercise("EZ Bar Skull Crushers", 3, 8, UserLevel.ADVANCED)
-        exercises?.plusAssign(
-            listOf(standingBumbellCurl, standingBarbellCurl, ezBarPreacherCurl,
-                crucifixCurl, hammerCurl, tricepsPressdown, ezBarSkullCrushers)
+        val benchPress = Exercise("Bench Press", 4, 10, UserLevel.BEGINNER)
+        val chestFly = Exercise("Chest Fly", 4, 10, UserLevel.BEGINNER)
+        val pushUp = Exercise("Push Up", 4, 10, UserLevel.BEGINNER)
+        val bandChestFly = Exercise("BandChestFly", 3, 8, UserLevel.INTERMEDIATE,0, 150)
+        val cableFly = Exercise("Cable Fly", 4, 10, UserLevel.INTERMEDIATE)
+        val declineBumbellBenchPress = Exercise("Decline Bumbell Bench Press", 4, 10, UserLevel.ADVANCED)
+        exercises.addAll(
+            listOf(benchPress, chestFly, pushUp,
+                bandChestFly, bandChestFly, cableFly, declineBumbellBenchPress)
         )
     }
 }

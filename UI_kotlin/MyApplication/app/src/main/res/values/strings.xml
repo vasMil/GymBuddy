@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">GymBuddy</string>
     <string name="welcome">Welcome to GYMBUDDY</string>
     <string name="comp">Your personal training companion</string>
     <string name="login">Log in</string>
