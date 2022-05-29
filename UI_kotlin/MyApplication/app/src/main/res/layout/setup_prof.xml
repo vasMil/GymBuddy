@@ -40,14 +40,16 @@
         android:innerRadius="0dp"
         android:shape="ring"
         android:thicknessRatio="1.9">
+
         <ImageView
             android:layout_height="120dp"
             android:layout_width="match_parent"
             android:id="@+id/imageView1"
-            android:src="@drawable/YOUR_IMAGE"
+            android:src="@drawable/profile"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:contentDescription="ImageProf">
+
         </ImageView>
     </androidx.cardview.widget.CardView>
 
