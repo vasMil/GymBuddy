@@ -12,14 +12,12 @@
         android:id="@+id/choose_exercise"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="105dp"
-        android:layout_marginRight="105dp"
+        android:layout_marginHorizontal="105dp"
+        android:layout_marginVertical="50dp"
         android:fontFamily="@font/aoboshi_one_regular"
         android:text="@string/choose2"
         android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:textColor="@color/main_color"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +30,8 @@
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:fillViewport="true"
-        android:paddingTop="70dp"
+        android:paddingBottom="135dp"
+        android:paddingHorizontal="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,6 +45,32 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
     </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="gone" />
+
+    <Switch
+        android:id="@+id/acceptSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="206dp"
+        android:layout_marginLeft="206dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        android:text="Accept"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/confirmButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
