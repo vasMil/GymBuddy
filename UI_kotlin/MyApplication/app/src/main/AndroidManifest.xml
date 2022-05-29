@@ -25,6 +25,10 @@
         <activity android:name=".ChooseExerciseBoundary">
 
         </activity>
+
+        <activity android:name=".UserProfile">
+
+        </activity>
     </application>
 
 </manifest>

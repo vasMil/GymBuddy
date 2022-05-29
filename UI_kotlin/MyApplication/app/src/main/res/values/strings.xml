@@ -71,6 +71,7 @@
     <string name="congratulations">Congratulations! You completed the workout in 1h 28min.</string>
     <string name="keep_it">Keep It Up!</string>
     <string name="imageprof">ImageProf</string>
-
+    <!-- Upload Video strings -->
+    <string name="uv_confirm_upload">Upload video for %1$s!</string>
 
 </resources>

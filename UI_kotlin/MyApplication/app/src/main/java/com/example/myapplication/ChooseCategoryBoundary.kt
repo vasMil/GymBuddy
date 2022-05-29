@@ -7,7 +7,6 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import java.io.Serializable
 
@@ -36,8 +35,6 @@ class ChooseCategoryBoundary : AppCompatActivity() {
         for (category in categories) {
             val btn = createCategoryButton(mainLayout, category)
             btn.setOnClickListener {
-                Toast.makeText(this@ChooseCategoryBoundary, btn.tag.toString().substringAfter("_")
-                    , Toast.LENGTH_SHORT).show()
                 intentChooseExerciseBoundary(category)
             }
         }
