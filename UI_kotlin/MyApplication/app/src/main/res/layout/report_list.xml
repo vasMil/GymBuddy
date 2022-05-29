@@ -9,7 +9,6 @@
 
 
 
-
     <Button
         android:id="@+id/report1"
         android:layout_width="300dp"
@@ -17,10 +16,33 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="50dp"
         app:backgroundTint="#00FFFFFF"
-        android:text="@string/report_list"
+        android:text="@string/report1"
         android:textAllCaps="false"
         android:textColor="@color/main_color"
         android:textSize="20sp"
         tools:ignore="TextContrastCheck"  />
-
+    <Button
+        android:id="@+id/report2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#00FFFFFF"
+        android:text="@string/report2"
+        android:textAllCaps="false"
+        android:textColor="@color/main_color"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck"  />
+    <Button
+        android:id="@+id/report3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#00FFFFFF"
+        android:text="@string/report3"
+        android:textAllCaps="false"
+        android:textColor="@color/main_color"
+        android:textSize="20sp"
+        tools:ignore="TextContrastCheck"  />
 </LinearLayout>
