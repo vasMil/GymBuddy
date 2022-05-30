@@ -15,7 +15,7 @@
             android:name=".Ranking"
             android:exported="false" />
         <activity
-            android:name=".UserProfile"
+            android:name=".AdminHomepage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,6 +29,9 @@
         </activity>
 
         <activity android:name=".ChooseCategoryBoundary">
+
+        </activity>
+        <activity android:name=".ReportList">
 
         </activity>
     </application>
