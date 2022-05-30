@@ -62,6 +62,9 @@
     <string name="workout2">Workout - Pull</string>
     <string name="choose2">Choose an exercise</string>
     <string name="dips">Dips</string>
+    <string name="pull_ups">Pull Ups</string>
+    <string name="bench_row">Bench Row</string>
+    <string name="lat_pulldown">Lat Pulldown</string>
     <string name="logo"> </string>
     <string name="seated_cable">Seated Cable Row</string>
     <string name="french_press">French Press</string>
