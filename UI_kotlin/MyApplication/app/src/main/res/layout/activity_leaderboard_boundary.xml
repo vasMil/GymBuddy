@@ -42,39 +42,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:id="@+id/trow"
+        android:id="@+id/table"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:padding="5sp">
 
         <TableRow
-            android:id="@+id/table"
+            android:id="@+id/t1"
             android:layout_width="413dp"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tr1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="50sp"
+                android:paddingRight="120sp"
                 android:text="#"
                 android:textColor="@android:color/black"
                 android:textSize="23sp" />
 
             <TextView
-                android:id="@+id/textView13"
+                android:id="@+id/tr2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="50sp"
+                android:paddingRight="120sp"
                 android:text="Name"
                 android:textColor="@android:color/black"
                 android:textSize="23sp" />
 
             <TextView
-                android:id="@+id/textView21"
+                android:id="@+id/tr3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="50sp"
+                android:paddingRight="120sp"
                 android:text="kgs"
                 android:textColor="@android:color/black"
                 android:textSize="23sp" />
@@ -84,7 +85,7 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/enter"
+        android:id="@+id/b1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"

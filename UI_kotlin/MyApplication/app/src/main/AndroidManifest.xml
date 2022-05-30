@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".Leaderboard"
+            android:exported="false" />
+        <activity
             android:name=".LeaderboardBoundary"
             android:exported="false" />
         <activity
@@ -24,7 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ChooseExerciseBoundary"></activity>
+        <activity android:name=".ChooseExerciseBoundary" />
     </application>
 
 </manifest>
