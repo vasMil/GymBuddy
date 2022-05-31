@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
@@ -33,6 +34,12 @@ class UserProfile : AppCompatActivity() {
         }
         else {
             gymView.text = user.currentGym!!.name
+        }
+
+        // Add event listener on changeGym button so it redirects to the MapBoundary
+        changeGymButton.setOnClickListener {
+            val intentMap = Intent(this, MapBoundary::class.java)
+            startActivity(intentMap)
         }
     }
 }
