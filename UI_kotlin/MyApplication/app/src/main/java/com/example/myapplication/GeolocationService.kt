@@ -35,4 +35,8 @@ class GeocodingService {
     fun getCurrentLocationTiles(): Int {
         return R.drawable.geo_plateia_georgiou
     }
+
+    fun getCurrentLocation(): Pair<Double, Double> {
+        return Pair(38.246071508095646, 21.735207972839923)
+    }
 }
