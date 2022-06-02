@@ -11,10 +11,12 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
-
             android:name=".Ranking"
-            android:exported="false" />
+            android:exported="false"/>
 
+
+        <activity android:name=".TrainerApplicationBoundary" android:parentActivityName=".UploadDocs"></activity>
+        <activity android:name=".UploadDocs" android:parentActivityName=".UploadCertificates"></activity>
         <activity android:name= ".UploadCertificates" android:parentActivityName=".UserProfile" > </activity>
         <activity
             android:name=".UserProfile"
