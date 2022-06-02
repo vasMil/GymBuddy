@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-
         <activity
-
+            android:name=".Reports"
+            android:exported="false" />
+        <activity
             android:name=".Ranking"
             android:exported="false" />
         <activity
@@ -23,17 +24,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ChooseExerciseBoundary">
-
-        </activity>
-
-        <activity android:name=".ChooseCategoryBoundary">
-
-        </activity>
-        <activity android:name=".ReportList">
-
-        </activity>
+        <activity android:name=".ChooseExerciseBoundary"></activity>
+        <activity android:name=".ChooseCategoryBoundary"></activity>
+        <activity android:name=".ReportList"></activity>
     </application>
 
 </manifest>

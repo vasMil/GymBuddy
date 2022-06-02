@@ -12,7 +12,6 @@ import android.widget.ListView
 import android.widget.TextView
 
 
-
 class ReportList : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,13 +41,24 @@ class ReportList : AppCompatActivity() {
 
             val report_btn = rowMain.findViewById<Button>(R.id.report_btn)
             report_btn.text = "See report $position"
-            report_btn.setOnClickListener{}
+            report_btn.setOnClickListener{
+                val intent = Intent(this , ReportService::class.java)
+                startActivity(intent)}
 
             return rowMain
 
             //  val textView = TextView(mContext)
             // textView.text = "Here is"
             //  return textView
+        }
+
+        private fun startActivity(intent: Int) {
+
+        }
+
+        private fun Intent(myCustomAdopter: ReportList.MyCustomAdopter, java: Class<ReportService>): Int {
+
+            return 0
         }
 
         override fun getItem(position: Int): Any {

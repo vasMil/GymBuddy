@@ -69,15 +69,18 @@
     <string name="congratulations">Congratulations! You completed the workout in 1h 28min.</string>
     <string name="keep_it">Keep It Up!</string>
     <string name="imageprof">ImageProf</string>
+    <string name="pull_ups">Pull ups</string>
+    <string name="bench_row">Bench row</string>
+    <string name="lat_pulldown">Lat pulldown</string>
 
-    <!-- Upload Video strings --> 
+
+    <!-- Upload Video strings -->
     <string name="uv_confirm_upload">Upload video for %1$s!</string>
-	<!-- Admin checks reports strings --> 
+    <!-- Admin checks reports strings -->
     <string name="report_list">Report List</string>
     <string name="report1">Report 1</string>
     <string name="report2">Report 2</string>
     <string name="report3">Report 3</string>
-
 
 
 </resources>
