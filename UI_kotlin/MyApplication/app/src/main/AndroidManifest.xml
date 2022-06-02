@@ -14,7 +14,8 @@
             android:name=".Ranking"
             android:exported="false"/>
 
-
+        <activity android:name=".ApplicationDeniedBoundary" android:parentActivityName=".TrainerApplicationBoundary"></activity>
+        <activity android:name=".ApplicationCompleteBoundary" android:parentActivityName=".TrainerApplicationBoundary"></activity>
         <activity android:name=".TrainerApplicationBoundary" android:parentActivityName=".UploadDocs"></activity>
         <activity android:name=".UploadDocs" android:parentActivityName=".UploadCertificates"></activity>
         <activity android:name= ".UploadCertificates" android:parentActivityName=".UserProfile" > </activity>
