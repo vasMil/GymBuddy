@@ -14,6 +14,8 @@
 
             android:name=".Ranking"
             android:exported="false" />
+
+        <activity android:name= ".UploadCertificates" android:parentActivityName=".UserProfile" > </activity>
         <activity
             android:name=".UserProfile"
             android:exported="true">
@@ -27,6 +29,9 @@
         <activity android:name=".ChooseExerciseBoundary">
 
         </activity>
+
+
+
 
         <activity android:name=".ChooseCategoryBoundary">
 

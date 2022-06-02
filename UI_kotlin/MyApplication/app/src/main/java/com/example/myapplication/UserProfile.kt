@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
@@ -34,5 +35,12 @@ class UserProfile : AppCompatActivity() {
         else {
             gymView.text = user.currentGym!!.name
         }
+
+        //Setup BecomeTrainer button
+        val buttonBecomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
+        // set on-click listener
+        buttonBecomeTrainer.setOnClickListener {
+            val intent = Intent(this, UploadCertificates::class.java)
+            startActivity(intent)   }
     }
 }
