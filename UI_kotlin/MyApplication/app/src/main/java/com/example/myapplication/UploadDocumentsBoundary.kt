@@ -74,6 +74,7 @@ class UploadDocs:AppCompatActivity() {
         val docName = findViewById<EditText>(R.id.docName)
         val nextButton = findViewById<Button>(R.id.next_button)
 
+        //if user doesn't upload the documents then return message
         nextButton.setOnClickListener {
             if (isEmpty(docName.text.toString())) {
                 Snackbar.make(docName, "invalid documents", Snackbar.LENGTH_SHORT).show();
@@ -92,9 +93,11 @@ class UploadDocs:AppCompatActivity() {
 
         }
 
-          }
+    }
     private fun displayTrainerApplication(){
-        val intent = Intent(this, TrainerApplicationBoundary :: class.java )
+        val docName = findViewById<EditText>(R.id.docName)
+        val intent = Intent(this@UploadDocs, TrainerApplicationBoundary :: class.java )
+        intent.putExtra("docName", docName.text.toString())
         startActivity(intent)
     }
 
