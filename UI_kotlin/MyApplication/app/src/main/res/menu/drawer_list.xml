@@ -1,29 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
     <item
         android:id="@+id/nav_home"
-        android:icon="@drawable/home_light"
+        android:icon="@drawable/menu_home"
         android:title="Home" />
 
     <item
         android:id="@+id/profile"
-        android:icon="@drawable/profile"
+        android:icon="@drawable/menu_profile"
         android:title="Profile" />
 
     <item
         android:id="@+id/workout_plan"
-        android:icon="@drawable/workout_plan"
+        android:icon="@drawable/menu_workout_plan"
         android:title="My workout plan" />
 
     <item
         android:id="@+id/messages"
-        android:icon="@drawable/messages"
+        android:icon="@drawable/menu_messages"
         android:title="Messages" />
 
     <item
         android:id="@+id/activity"
-        android:icon="@drawable/activity"
+        android:icon="@drawable/menu_activity"
         android:title="My activity" />
 
     <item
@@ -35,6 +34,4 @@
         android:id="@+id/settings"
         android:icon="@drawable/settings"
         android:title="Settings" />
-
-
 </menu>

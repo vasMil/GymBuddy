@@ -14,7 +14,7 @@ class MyProfileBoundary : AppCompatActivity() {
         val buttonBecomeTrainer = findViewById<Button>(R.id.buttonBecomeTrainer)
         // set on-click listener
         buttonBecomeTrainer.setOnClickListener{
-            val intent = Intent (this, UploadCertificates::class.java )
+            val intent = Intent (this, UploadDocumentsBoundary::class.java )
             startActivity(intent)
         }
     }
