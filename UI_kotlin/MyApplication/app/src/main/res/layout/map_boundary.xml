@@ -5,6 +5,7 @@
     android:id="@+id/googleMaps"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MapBoundary">
 
     <EditText
@@ -29,17 +30,8 @@
         android:hint="Max distance"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
-
-    <ImageView
-        android:id="@+id/mapView"
-        android:layout_width="0dp"
-        android:layout_height="578dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maxDistanceEditText"
-        app:srcCompat="@drawable/geo_google_maps" />
+        app:layout_constraintTop_toBottomOf="@+id/addressEditText"
+        android:layout_marginLeft="90dp" />
 
     <Button
         android:id="@+id/searchButton"
@@ -54,5 +46,32 @@
         app:layout_constraintBottom_toTopOf="@+id/mapView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/maxDistanceEditText"
-        app:layout_constraintTop_toBottomOf="@+id/addressEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/addressEditText"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="49dp" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="156dp"
+        android:layout_marginRight="156dp"
+        android:layout_marginBottom="84dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="578dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/maxDistanceEditText"
+        app:srcCompat="@drawable/geo_google_maps" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

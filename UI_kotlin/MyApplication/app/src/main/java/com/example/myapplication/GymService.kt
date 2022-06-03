@@ -28,37 +28,37 @@ class GymService {
     }
 
     fun getGymsNearby(curLoc: Pair<Double, Double>, maxDistance: Int): Array<Gym> {
-        var nearbyGyms = emptyArray<Gym>()
+        var nearbyGyms = mutableListOf<Gym>()
         gyms.forEach { gym ->
             // If > 230m add Studio 6
             if (maxDistance > 230 && gym.name == "Studio 6") {
-                nearbyGyms.plus(gym)
+                nearbyGyms.add(gym)
                 return@forEach
             }
             // If > 250m add Fitness Mall
             if (maxDistance > 250 && gym.name == "Fintess Mall") {
-                nearbyGyms.plus(gym)
+                nearbyGyms.add(gym)
                 return@forEach
             }
             // If > 400m add Icon
             if (maxDistance > 400 && gym.name == "Icon") {
-                nearbyGyms.plus(gym)
+                nearbyGyms.add(gym)
                 return@forEach
             }
             // If > 900m add Patraiko Gymnastirio
             if (maxDistance > 900 && gym.name == "Patraiko") {
-                nearbyGyms.plus(gym)
+                nearbyGyms.add(gym)
                 return@forEach
             }
             // If > 1300m add MVP
             if (maxDistance > 1300 && gym.name == "MVP") {
-                nearbyGyms.plus(gym)
+                nearbyGyms.add(gym)
                 return@forEach
             }
         }
 
         // Return the array with gyms nearby
-        return nearbyGyms
+        return nearbyGyms.toTypedArray()
     }
 
     fun getGymByLocation(location: Pair<Double, Double>): Gym? {

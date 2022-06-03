@@ -2,6 +2,7 @@ package com.example.myapplication
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -11,7 +12,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.core.text.isDigitsOnly
 
 class MapBoundary : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +27,9 @@ class MapBoundary : AppCompatActivity() {
         searchBtn.setOnClickListener {
             handleSearch()
         }
+
+        val gym = intent.getSerializableExtra("gym") ?: return
+        previewGym(gym as Gym)
     }
 
     private fun handleSearch() {
@@ -76,8 +79,31 @@ class MapBoundary : AppCompatActivity() {
             return;
         }
 
-        // Else find nearby gyms - intent to GymsInAreaBoundary
+        /*// Inform the user that you consider his location to be "Plateia Georgiou"
+        Toast.makeText(this@MapBoundary,"Disclaimer: We assume you are at " +
+                "Plateia Georgiou!",
+            Toast.LENGTH_SHORT).show()*/
 
+        // Else find nearby gyms
+        // If none are found toast Unable to...
+        // If there is only one display it in this boundary directly
+        // If there are more than 1 intent to GymsInAreaBoundary
+        val gymsNearby = gymService.getGymsNearby(geolocationService.getCurrentLocation(), maxDist)
+        if (gymsNearby.isEmpty()) {
+            Toast.makeText(this@MapBoundary, "Unable to find any gyms around you",
+                Toast.LENGTH_SHORT).show()
+        }
+        else if(gymsNearby.size == 1) {
+            previewGym(gymsNearby[0])
+            Toast.makeText(this@MapBoundary, "There is only one gym near you - " +
+                    "try increasing the maximum distance",
+                Toast.LENGTH_SHORT).show()
+        }
+        else {
+            val intentGymsNearby = Intent(this, GymsInAreaBoundary::class.java)
+            intentGymsNearby.putExtra("gyms", gymsNearby)
+            startActivity(intentGymsNearby)
+        }
     }
 
     private fun previewGym(gym: Gym? = null) {
@@ -87,10 +113,17 @@ class MapBoundary : AppCompatActivity() {
         if(gym == null) {
             mapView.setImageResource(R.drawable.geo_plateia_georgiou)
             hideKeyboard()
-            return;
+            return
         }
         // Display image and accept button
         mapView.setImageResource(gym.googleImage)
+        val submitBtn = findViewById<Button>(R.id.submitButton)
+        submitBtn.visibility = View.VISIBLE
+        submitBtn.setOnClickListener {
+            // Redirect to profile boundary
+            val intentProf = Intent(this, UserProfile::class.java)
+            startActivity(intentProf)
+        }
         hideKeyboard()
     }
 

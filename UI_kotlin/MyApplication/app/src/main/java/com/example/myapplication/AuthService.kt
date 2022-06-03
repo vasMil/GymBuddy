@@ -4,7 +4,7 @@ class AuthService {
     private var staticUserId = 0
         get() = field++
 
-    fun authUser(username: String, password: String): UserInterface? {
+    fun authUser(username: String, password: String): Any? {
         if(username == "admin" && password == "admin") {
             return Admin(staticUserId)
         }

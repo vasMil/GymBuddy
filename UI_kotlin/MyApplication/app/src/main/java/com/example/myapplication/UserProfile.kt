@@ -8,13 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class UserProfile : AppCompatActivity() {
-    private val user: Athlete
-
-    init {
-        // TODO: Delete this and implement login functionality
-        val auth = AuthService()
-        user = auth.authUser("athlete", "athlete") as Athlete
-    }
+    private lateinit var user: Athlete
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,6 +17,9 @@ class UserProfile : AppCompatActivity() {
             title = "User Profile"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
+        // Extract the user using UserSession
+        this.user = UserSession.getUser<Athlete>()
+
         // Setup Views
         val usernameView = findViewById<TextView>(R.id.username_texView)
         val changeGymButton = findViewById<Button>(R.id.changeGym_button)
