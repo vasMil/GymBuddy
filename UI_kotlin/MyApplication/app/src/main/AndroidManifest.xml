@@ -22,9 +22,11 @@
         <activity
             android:name=".MapBoundary"
             android:exported="false" />
+        <activity
+            android:name=".UploadDocumentsBoundary"
+            android:exported="false" />
 
         <activity
-
             android:name=".Ranking"
             android:exported="false" />
         <activity

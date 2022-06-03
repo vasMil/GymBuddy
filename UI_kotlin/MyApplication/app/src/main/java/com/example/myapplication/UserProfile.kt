@@ -7,9 +7,21 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 
 class UserProfile : AppCompatActivity() {
+    private lateinit var drawerLayout: DrawerLayout
     private lateinit var user: Athlete
+
+    override fun onSupportNavigateUp(): Boolean {
+        if (this.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            this.drawerLayout.closeDrawer(GravityCompat.START)
+        } else {
+            this.drawerLayout.openDrawer(GravityCompat.START)
+        }
+        return true
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +30,7 @@ class UserProfile : AppCompatActivity() {
             title = "User Profile"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
+        setupNavigation()
         // Extract the user using UserSession
         this.user = UserSession.getUser<Athlete>()
 
@@ -25,7 +38,7 @@ class UserProfile : AppCompatActivity() {
         val usernameView = findViewById<TextView>(R.id.username_texView)
         val changeGymButton = findViewById<Button>(R.id.changeGym_button)
         val gymView = findViewById<TextView>(R.id.gym_textView)
-        val becomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
+        val buttonBecomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
 
         usernameView.text = user.name
         if(user.currentGym === null) {
@@ -40,5 +53,16 @@ class UserProfile : AppCompatActivity() {
             val intentMap = Intent(this, MapBoundary::class.java)
             startActivity(intentMap)
         }
+
+        // Add event listener on become trainer
+        buttonBecomeTrainer.setOnClickListener{
+            val intent = Intent (this, UploadDocumentsBoundary::class.java )
+            startActivity(intent)
+        }
+    }
+
+    private fun setupNavigation() {
+        this.drawerLayout = findViewById(R.id.drawerLayout)
+        NavigationUtils.setupNavigation(this, drawerLayout, supportActionBar)
     }
 }
