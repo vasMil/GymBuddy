@@ -19,14 +19,21 @@ class LeaderboardBoundary : AppCompatActivity() {
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color))
             )
         }
-        val exercise = intent.getSerializableExtra("exercise") as Exercise
-        val titleView = findViewById<TextView>(R.id.leaderboard_title_exercise)
-        titleView.text = exercise.name
-        val regAttBtn = findViewById<Button>(R.id.register_attempt)
-        regAttBtn.setOnClickListener {
-            val intent = Intent(this,RegisterAttemptBoundary::class.java)
-            startActivity(intent)
+        var exercise = intent.getSerializableExtra("exercise")
+        if (exercise == null) {
+            Toast.makeText(this@LeaderboardBoundary, "You have a pending attempt", Toast.LENGTH_SHORT).show()
         }
+        else {
+            exercise = exercise as Exercise
+            val titleView = findViewById<TextView>(R.id.leaderboard_title_exercise)
+            titleView.text = exercise.name
+            val regAttBtn = findViewById<Button>(R.id.register_attempt)
+            regAttBtn.setOnClickListener {
+                val intent = Intent(this,RegisterAttemptBoundary::class.java)
+                startActivity(intent)
+            }
+        }
+
     }
 
 

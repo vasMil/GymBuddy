@@ -9,11 +9,15 @@ import android.widget.Toast
 
 class RegisterAttemptBoundary : AppCompatActivity() {
     private lateinit var confirmButton: Button
-    private lateinit var acceptSwitch: Switch
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_attempt_boundary)
+
+        val sendBtn = findViewById<Button>(R.id.sendButton)
+        sendBtn.setOnClickListener {
+            handleConfirmation()
+        }
     }
 
     private fun handleConfirmation() {
@@ -24,9 +28,8 @@ class RegisterAttemptBoundary : AppCompatActivity() {
             startActivity(intent)
         }
         else {
+            Toast.makeText(this@RegisterAttemptBoundary, "Upload video failed", Toast.LENGTH_SHORT).show()
 
         }
     }
-
-
 }
