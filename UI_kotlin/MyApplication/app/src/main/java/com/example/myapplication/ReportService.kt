@@ -2,14 +2,24 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 class ReportService : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.`report_service`)
+        var reports: MutableList<Reports> = mutableListOf()
+        init {
+            fetchReports()
+        }
 
-        val actionBar = supportActionBar
+    private fun fetchReports() {
+        if(reports.isNotEmpty()) {
+            return;
+        }
+        //val reportButton = findViewById<Button>(R.id.report_btn)
 
-        actionBar!!.title = "Report Service"
+
+
     }
+
+
+
 }
