@@ -14,6 +14,9 @@ import android.widget.ImageView
 import android.widget.Toast
 
 class MapBoundary : AppCompatActivity() {
+    private val geolocationService = GeolocationService()
+    private val gymService = GymService()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.map_boundary)
@@ -36,8 +39,6 @@ class MapBoundary : AppCompatActivity() {
         // Get the info provided in textViews
         val addressView = findViewById<EditText>(R.id.addressEditText)
         val maxDistView = findViewById<EditText>(R.id.maxDistanceEditText)
-        val geolocationService = GeolocationService()
-        val gymService = GymService()
         val maxDistStr = maxDistView.text.toString()
 
         // If the max distance is not empty and not a number, its value is considered invalid
@@ -79,11 +80,6 @@ class MapBoundary : AppCompatActivity() {
             return;
         }
 
-        /*// Inform the user that you consider his location to be "Plateia Georgiou"
-        Toast.makeText(this@MapBoundary,"Disclaimer: We assume you are at " +
-                "Plateia Georgiou!",
-            Toast.LENGTH_SHORT).show()*/
-
         // Else find nearby gyms
         // If none are found toast Unable to...
         // If there is only one display it in this boundary directly
@@ -115,11 +111,21 @@ class MapBoundary : AppCompatActivity() {
             hideKeyboard()
             return
         }
-        // Display image and accept button
+        // Update the preview with the image, the address and the distance from current location
+        // of the gym (Disclaimer: only supported location is Plateia Georgiou)
         mapView.setImageResource(gym.googleImage)
+        val addressEditText = findViewById<EditText>(R.id.addressEditText)
+        addressEditText.setText(gym.name)
+        val maxDistEditText = findViewById<EditText>(R.id.maxDistanceEditText)
+        maxDistEditText.setText(geolocationService.getDistanceFromGym(gym,
+            geolocationService.getCurrentLocation()).toString())
+
+        // Setup submit button
         val submitBtn = findViewById<Button>(R.id.submitButton)
         submitBtn.visibility = View.VISIBLE
         submitBtn.setOnClickListener {
+            // Update the gym in Athlete
+            UserSession.getUser<Athlete>().currentGym = gym
             // Redirect to profile boundary
             val intentProf = Intent(this, UserProfile::class.java)
             startActivity(intentProf)

@@ -20,7 +20,7 @@ class GymsInAreaBoundary : AppCompatActivity() {
         setContentView(R.layout.gyms_in_area_boundary)
         supportActionBar?.apply {
             title = "Select Nearby Gym"
-            setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
+            setBackgroundDrawable(ColorDrawable(Color.parseColor("#F16D22")))
         }
         gymsNearby = intent.getSerializableExtra("gyms") as Array<Gym>
 
