@@ -75,12 +75,11 @@
 
     <!-- Upload Video strings -->
     <string name="uv_confirm_upload">Upload video for %1$s!</string>
-	<!-- Admin checks reports strings --> 
+    <!-- Admin checks reports strings -->
     <string name="report_list">Report List</string>
     <string name="report1">Report 1</string>
     <string name="report2">Report 2</string>
     <string name="report3">Report 3</string>
-
 
 
     <!-- Find Gym strings -->
