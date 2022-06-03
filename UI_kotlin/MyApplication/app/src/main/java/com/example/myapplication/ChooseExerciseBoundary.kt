@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.marginTop
 import androidx.core.widget.NestedScrollView
+import java.io.Serializable
 
 class ChooseExerciseBoundary : AppCompatActivity() {
     private lateinit var exercises: Array<Exercise>
@@ -20,6 +22,7 @@ class ChooseExerciseBoundary : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.choose_exercise_boundary)
+
 
         this.category = intent.getSerializableExtra("category") as ExerciseCategory
         displayExercises()
@@ -45,7 +48,19 @@ class ChooseExerciseBoundary : AppCompatActivity() {
 
         btn.setTextColor(Color.parseColor("#F16D22"))
         layout.addView(btn)
+        btn.setOnClickListener {
+            intentLeaderboardBoundary(exercise)
+        }
+
+
         return btn
+    }
+
+    private fun intentLeaderboardBoundary(exercise: Exercise) {
+        // Create the instance and move to it
+        val intent = Intent(this, LeaderboardBoundary::class.java)
+        intent.putExtra("exercise", exercise as Serializable)
+        startActivity(intent)
     }
 
 }
