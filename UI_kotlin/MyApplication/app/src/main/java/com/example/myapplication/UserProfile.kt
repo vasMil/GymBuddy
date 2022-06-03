@@ -12,7 +12,7 @@ class UserProfile : AppCompatActivity() {
 
     init {
         // TODO: Delete this and implement login functionality
-        val auth = authService()
+        val auth = AuthService()
         user = auth.authUser("athlete", "athlete") as Athlete
     }
 
@@ -27,6 +27,7 @@ class UserProfile : AppCompatActivity() {
         val usernameView = findViewById<TextView>(R.id.username_texView)
         val changeGymButton = findViewById<Button>(R.id.changeGym_button)
         val gymView = findViewById<TextView>(R.id.gym_textView)
+        val becomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
 
         usernameView.text = user.name
         if(user.currentGym === null) {

@@ -33,18 +33,20 @@ class MapBoundary : AppCompatActivity() {
         // Get the info provided in textViews
         val addressView = findViewById<EditText>(R.id.addressEditText)
         val maxDistView = findViewById<EditText>(R.id.maxDistanceEditText)
-        val geocodingService = GeocodingService()
+        val geolocationService = GeolocationService()
         val gymService = GymService()
         val maxDistStr = maxDistView.text.toString()
-        // If there max distance is not  empty and not a number, it value is considered invalid
+
+        // If the max distance is not empty and not a number, its value is considered invalid
         if (!maxDistStr.isNumeric() && maxDistStr.isNotEmpty()) {
             Toast.makeText(this@MapBoundary,"Max distance should be a number!",
                 Toast.LENGTH_SHORT).show()
             return;
         }
-        // If an address is provided use geocoding to map the address provided to a lat, lng pair
+
+        // If an address is provided use geolocation to map the address provided to a lat, lng pair
         val address = addressView.text.toString()
-        val addressCoords = geocodingService.addressToCoords(address)
+        val addressCoords = geolocationService.addressToCoords(address)
         // if the return is null get current location and make a toast that you did not find the
         // address - return
         if(addressCoords == null) {
@@ -57,7 +59,7 @@ class MapBoundary : AppCompatActivity() {
         // due to the code simplicity consider current location may only be Plateia Georgiou
         else if(address != "Plateia Georgiou") {
             previewGym(gymService.getGymByLocation(addressCoords))
-            return
+            return;
         }
 
         // At this point max distance is required so I may find gyms nearby

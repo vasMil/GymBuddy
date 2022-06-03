@@ -9,8 +9,11 @@ In order to simplify things since this is not a coding course I will
 skip the api calls, so this service will only return a few static pairs (locations)
 and the corresponding images to display instead of the tiles.
 */
-class GeocodingService {
+class GeolocationService {
     fun addressToCoords(address: String): Pair<Double, Double>? {
+        if(address == "Plateia Georgiou") {
+            return Pair(38.246071508095646, 21.735207972839923)
+        }
         if(address == "MVP Patra") {
             return Pair(38.25612055095445, 21.74074361147726)
         }

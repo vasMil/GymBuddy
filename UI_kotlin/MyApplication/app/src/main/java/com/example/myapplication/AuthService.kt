@@ -1,6 +1,6 @@
 package com.example.myapplication
 
-class authService {
+class AuthService {
     private var staticUserId = 0
         get() = field++
 
