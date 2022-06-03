@@ -114,6 +114,9 @@
         android:layout_marginLeft="46dp"
         android:layout_marginEnd="66dp"
         android:layout_marginRight="66dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/changeGym_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/profile_imageView" />
@@ -125,6 +128,8 @@
         android:layout_marginStart="34dp"
         android:layout_marginLeft="34dp"
         android:layout_marginTop="13dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

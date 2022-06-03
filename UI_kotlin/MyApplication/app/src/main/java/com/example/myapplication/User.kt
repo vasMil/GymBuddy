@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import androidx.core.app.ActivityCompat
+import java.io.Serializable
 import java.util.jar.Manifest
 
 open class User(name: String, id: Int) : UserInterface {

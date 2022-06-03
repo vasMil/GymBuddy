@@ -47,7 +47,7 @@
         app:cardBackgroundColor="@color/main_color">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/loginButton"
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -61,7 +61,7 @@
             tools:ignore="TextContrastCheck" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/submit_loginButton"
             android:layout_width="114dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"

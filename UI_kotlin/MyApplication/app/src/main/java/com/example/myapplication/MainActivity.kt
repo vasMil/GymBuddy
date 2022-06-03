@@ -1,7 +1,9 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 
 
 // How to change the starting activity of the application
@@ -15,5 +17,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val loginBtn = findViewById<Button>(R.id.loginButton)
+        loginBtn.setOnClickListener {
+            val intentLogin = Intent(this, LoginBoundary::class.java)
+            startActivity(intentLogin)
+        }
+
+        // TODO: Add functionality for signIn button
+        val signInBtn = findViewById<Button>(R.id.submit_loginButton)
+
     }
 }

@@ -73,7 +73,7 @@
     <string name="keep_it">Keep It Up!</string>
     <string name="imageprof">ImageProf</string>
 
-    <!-- Upload Video strings --> 
+    <!-- Upload Video strings -->
     <string name="uv_confirm_upload">Upload video for %1$s!</string>
 	<!-- Admin checks reports strings --> 
     <string name="report_list">Report List</string>
@@ -82,5 +82,17 @@
     <string name="report3">Report 3</string>
 
 
+
+    <!-- Find Gym strings -->
+    <string name="mapView">Map</string>
+    <string name="title_activity_gyms_in_area_boundary">GymsInAreaBoundary</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">login</string>
 
 </resources>
