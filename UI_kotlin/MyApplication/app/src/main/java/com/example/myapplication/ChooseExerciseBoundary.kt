@@ -49,18 +49,15 @@ class ChooseExerciseBoundary : AppCompatActivity() {
         btn.setTextColor(Color.parseColor("#F16D22"))
         layout.addView(btn)
         btn.setOnClickListener {
-            intentLeaderboardBoundary(exercise)
+            val intent = Intent(this, LeaderboardBoundary::class.java)
+            intent.putExtra("exercise", exercise as Serializable)
+            startActivity(intent)
         }
 
 
         return btn
     }
 
-    private fun intentLeaderboardBoundary(exercise: Exercise) {
-        // Create the instance and move to it
-        val intent = Intent(this, LeaderboardBoundary::class.java)
-        intent.putExtra("exercise", exercise as Serializable)
-        startActivity(intent)
-    }
+
 
 }

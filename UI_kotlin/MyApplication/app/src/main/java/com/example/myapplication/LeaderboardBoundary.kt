@@ -1,12 +1,12 @@
 package com.example.myapplication
 
+import android.content.Intent
+import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import android.widget.TableLayout
-import android.widget.TableRow
-import android.widget.TextView
+import android.widget.*
+import java.io.Serializable
 
 class LeaderboardBoundary : AppCompatActivity() {
 
@@ -22,6 +22,15 @@ class LeaderboardBoundary : AppCompatActivity() {
         val exercise = intent.getSerializableExtra("exercise") as Exercise
         val titleView = findViewById<TextView>(R.id.leaderboard_title_exercise)
         titleView.text = exercise.name
-
+        val regAttBtn = findViewById<Button>(R.id.register_attempt)
+        regAttBtn.setOnClickListener {
+            val intent = Intent(this,RegisterAttemptBoundary::class.java)
+            startActivity(intent)
+        }
     }
+
+
+
+
+
 }

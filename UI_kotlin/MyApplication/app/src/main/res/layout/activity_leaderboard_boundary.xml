@@ -21,6 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="411dp"
         android:layout_height="328dp"
         android:layout_marginTop="80dp"
@@ -160,13 +161,25 @@
                 android:layout_height="wrap_content"
                 android:width="137dp"
                 android:padding="20sp"
-                android:textSize="20dp"
-                android:text="kgs3" />
+                android:text="kgs3"
+                android:textSize="20dp" />
         </TableRow>
 
 
-
     </TableLayout>
+
+    <Button
+        android:id="@+id/register_attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="162dp"
+        android:text="Register attempt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
