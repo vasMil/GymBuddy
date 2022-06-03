@@ -39,6 +39,7 @@ class UserProfile : AppCompatActivity() {
         val changeGymButton = findViewById<Button>(R.id.changeGym_button)
         val gymView = findViewById<TextView>(R.id.gym_textView)
         val buttonBecomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
+        val uploadVideoBtn = findViewById<Button>(R.id.upVideo_button)
 
         usernameView.text = user.name
         if(user.currentGym === null) {
@@ -54,11 +55,18 @@ class UserProfile : AppCompatActivity() {
             startActivity(intentMap)
         }
 
+        uploadVideoBtn.setOnClickListener {
+            val intentCategories = Intent(this, ChooseCategoryBoundary::class.java)
+            startActivity(intentCategories)
+        }
+
         // Add event listener on become trainer
         buttonBecomeTrainer.setOnClickListener{
             val intent = Intent (this, UploadDocumentsBoundary::class.java )
             startActivity(intent)
         }
+
+
     }
 
     private fun setupNavigation() {
