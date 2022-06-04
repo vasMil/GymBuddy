@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,7 +11,6 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
-
 
 
 class ReportList : AppCompatActivity() {
@@ -26,7 +26,7 @@ class ReportList : AppCompatActivity() {
         val listView = findViewById<ListView>(R.id.report_listView)
         listView.adapter = MyCustomAdopter(this)
     }
-    private class MyCustomAdopter(context: Context): BaseAdapter() {
+    inner class MyCustomAdopter(context: Context): BaseAdapter() {
         private val mContext: Context
         private val names = arrayListOf<String>(
             "Report 0", "Report 1", "Report 2", "Report 3"
@@ -42,7 +42,9 @@ class ReportList : AppCompatActivity() {
 
             val report_btn = rowMain.findViewById<Button>(R.id.report_btn)
             report_btn.text = "See report $position"
-
+            report_btn.setOnClickListener{view ->
+                val intent = Intent(this@ReportList, PreviewReportBoundary::class.java)
+                startActivity(intent)}
 
             return rowMain
 
@@ -50,6 +52,8 @@ class ReportList : AppCompatActivity() {
             // textView.text = "Here is"
             //  return textView
         }
+
+
 
         override fun getItem(position: Int): Any {
             return "TEst"
