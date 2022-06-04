@@ -12,17 +12,12 @@ class PreviewReportBoundary : AppCompatActivity() {
         supportActionBar?.apply {
             title = "Report"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
+            fetchReports()
         }
     }
 
-    private fun displayReports() {
-        // fetch the reports
-        report.fetchReports()
-
-
+    private fun fetchReports() {
+        TODO("Not yet implemented")
     }
-
-
-
-
 }
+

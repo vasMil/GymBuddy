@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.myapplication" >
 
     <application
@@ -32,7 +33,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true" />
 
         android:theme="@style/Theme.MyApplication">
         <activity
@@ -40,10 +41,9 @@
             android:exported="false" />
         <activity
             android:name=".Report"
-            android:exported="false" />
-        <activity
-            android:name=".Ranking"
-            android:exported="false" />
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
         <activity
             android:name=".AdminHomepage"
             android:exported="true">
