@@ -11,6 +11,11 @@ import android.widget.Switch
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+import androidx.core.view.marginTop
+import androidx.core.widget.NestedScrollView
+import java.io.Serializable
+
+
 class ChooseExerciseBoundary : AppCompatActivity() {
     private lateinit var exercises: Array<Exercise>
     private var exerciseIndex = 0
@@ -25,6 +30,7 @@ class ChooseExerciseBoundary : AppCompatActivity() {
             title = "Upload Video"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
+
 
         this.category = intent.getSerializableExtra("category") as ExerciseCategory
         displayExercises()
@@ -66,8 +72,16 @@ class ChooseExerciseBoundary : AppCompatActivity() {
         btn.isAllCaps = false
         btn.textSize = 15f
         layout.addView(btn)
+        btn.setOnClickListener {
+            val intent = Intent(this, LeaderboardBoundary::class.java)
+            intent.putExtra("exercise", exercise as Serializable)
+            startActivity(intent)
+        }
+
+
         return btn
     }
+
 
     private fun displayConfirmButton(exerciseInd: Int) {
         confirmButton.text = getString(R.string.uv_confirm_upload, exercises[exerciseInd].name)
@@ -90,4 +104,8 @@ class ChooseExerciseBoundary : AppCompatActivity() {
                 .show()
         }
     }
+
+
+
+
 }

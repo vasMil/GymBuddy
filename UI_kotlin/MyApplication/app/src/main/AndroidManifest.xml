@@ -13,6 +13,7 @@
         android:theme="@style/Theme.MyApplication" >
         android:theme="@style/Theme.MyApplication">
         <activity
+
             android:name=".WorkoutPageBoundary"
             android:exported="false" />
 
@@ -31,6 +32,19 @@
 
         <activity
             android:name=".UploadDocumentsBoundary"
+            android:exported="false" />
+
+
+            android:name=".RegisterAttemptBoundary"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterAttempt"
+            android:exported="false" />
+        <activity
+            android:name=".Leaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardBoundary"
             android:exported="false" />
 
         <activity
@@ -66,6 +80,7 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
 
@@ -74,6 +89,9 @@
 
         <activity android:name=".ChooseExerciseBoundary" />`
         <activity android:name=".HomePageBoundary" />
+
+
+        <activity android:name=".ChooseExerciseBoundary" />
 
     </application>
 
