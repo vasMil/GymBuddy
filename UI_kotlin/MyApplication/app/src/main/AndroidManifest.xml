@@ -35,10 +35,9 @@
             android:exported="false" />
 
 
-            android:name=".RegisterAttemptBoundary"
-            android:exported="false" />
+
         <activity
-            android:name=".RegisterAttempt"
+            android:name=".RegisterAttemptBoundary"
             android:exported="false" />
         <activity
             android:name=".Leaderboard"
@@ -53,18 +52,14 @@
         <activity
 
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true" />
 
-        android:theme="@style/Theme.MyApplication">
+
         <activity
             android:name=".PreviewReportBoundary"
             android:exported="false" />
-        <activity
-            android:name=".Report"
-            android:exported="false" />
-        <activity
-            android:name=".Ranking"
-            android:exported="false" />
+
+
         <activity
             android:name=".AdminHomepage"
             android:exported="true">
@@ -87,11 +82,11 @@
         <activity android:name=".ReportList" />
 
 
-        <activity android:name=".ChooseExerciseBoundary" />`
+
         <activity android:name=".HomePageBoundary" />
 
 
-        <activity android:name=".ChooseExerciseBoundary" />
+
 
     </application>
 

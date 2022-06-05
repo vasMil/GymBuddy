@@ -26,7 +26,7 @@ class HomePageBoundary : AppCompatActivity() {
         val findTrainer = findViewById<Button>(R.id.home_btn3)
         val searchForGB = findViewById<Button>(R.id.home_btn4)
 
-        startWorkout.setOnClickListener{
+        /*startWorkout.setOnClickListener{
             if(/*Athlete has a program*/) {
                 val intentSW = Intent(this, WorkoutPageBoundary::class.java)
                 startActivity(intentSW)
@@ -35,5 +35,7 @@ class HomePageBoundary : AppCompatActivity() {
 
             }
         }
+
+         */
     }
 }
