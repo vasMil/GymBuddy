@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication" >
+    package="com.example.myapplication">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
 
+
         android:theme="@style/Theme.MyApplication" >
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".WorkoutPageBoundary"
+            android:exported="false" />
 
         <activity
             android:name=".LoginBoundary"
@@ -23,6 +28,7 @@
         <activity
             android:name=".MapBoundary"
             android:exported="false" />
+
         <activity
             android:name=".UploadDocumentsBoundary"
             android:exported="false" />
@@ -31,6 +37,7 @@
             android:name=".Ranking"
             android:exported="false" />
         <activity
+
             android:name=".MainActivity"
             android:exported="true" >
 
@@ -48,16 +55,25 @@
             android:name=".AdminHomepage"
             android:exported="true">
 
+
+            android:name=".ChooseCategoryBoundary"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
 
         <activity android:name=".ReportList" />
+
+
+        <activity android:name=".ChooseExerciseBoundary" />`
+        <activity android:name=".HomePageBoundary" />
 
     </application>
 

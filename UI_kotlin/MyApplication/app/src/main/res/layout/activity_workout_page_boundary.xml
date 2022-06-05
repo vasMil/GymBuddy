@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/recommend"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="80dp"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:text="This is your program, please choose your daily workout:"
+        android:textColor="@color/main_color"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/daily_1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/main_color"
+        android:text="@string/day_1"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/daily_2"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/main_color"
+        android:text="@string/day_2"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/daily_3"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:backgroundTint="@color/main_color"
+        android:text="@string/day_3"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        tools:ignore="TextContrastCheck" />
+
+
+</LinearLayout>

@@ -89,6 +89,8 @@
 
 
 
+
+
     <!-- Find Gym strings -->
     <string name="mapView">Map</string>
     <string name="title_activity_gyms_in_area_boundary">GymsInAreaBoundary</string>
