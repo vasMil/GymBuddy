@@ -16,4 +16,5 @@ class WorkoutPlan(numOfDays : Int, idealAthWeight: Int, idealAthHeight: Int, nam
 
     }
 
+
 }

@@ -17,12 +17,14 @@ class CategoryService {
         arms.image = R.drawable.arms
         val chest = Chest()
         chest.image = R.drawable.chest
+        val chest2 = Chest()
 //        val back = Back()
 //        val shoulders = Shoulders()
 //        val cardio = Cardio()
         categories.add(chest)
         categories.add(arms)
         categories.add(legsCategory)
+        categories.add(chest2)
 //        categories.add(back)
 //        categories.add(shoulders)
 //        categories.add(cardio)

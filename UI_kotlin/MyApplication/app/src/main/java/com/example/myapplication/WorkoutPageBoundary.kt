@@ -10,7 +10,7 @@ class WorkoutPageBoundary : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.workout_choose)
         supportActionBar?.apply {
-            title = "Workout Program"
+            title = "Your workout plan"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
 
