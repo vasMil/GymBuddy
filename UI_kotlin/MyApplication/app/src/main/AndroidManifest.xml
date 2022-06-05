@@ -8,15 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
-
-        android:theme="@style/Theme.MyApplication" >
         android:theme="@style/Theme.MyApplication">
         <activity
-
+            android:name=".GymListBoundary"
+            android:exported="false" />
+        <activity
             android:name=".WorkoutPageBoundary"
             android:exported="false" />
-
         <activity
             android:name=".LoginBoundary"
             android:exported="false" />
@@ -29,13 +27,9 @@
         <activity
             android:name=".MapBoundary"
             android:exported="false" />
-
         <activity
             android:name=".UploadDocumentsBoundary"
             android:exported="false" />
-
-
-
         <activity
             android:name=".RegisterAttemptBoundary"
             android:exported="false" />
@@ -45,49 +39,30 @@
         <activity
             android:name=".LeaderboardBoundary"
             android:exported="false" />
-
         <activity
             android:name=".Ranking"
             android:exported="false" />
         <activity
-
             android:name=".MainActivity"
             android:exported="true" />
-
-
         <activity
             android:name=".PreviewReportBoundary"
             android:exported="false" />
-
-
         <activity
             android:name=".AdminHomepage"
             android:exported="true">
-
-
             android:name=".ChooseCategoryBoundary"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
-
         <activity android:name=".ReportList" />
-
-
-
         <activity android:name=".HomePageBoundary" />
-
-
-
-
     </application>
 
 </manifest>
