@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".TrainersListBoundary"
+            android:exported="false" />
+        <activity
+            android:name=".HoursListBoundary"
+            android:exported="false" />
+        <activity
             android:name=".GymListBoundary"
             android:exported="false" />
         <activity
@@ -49,9 +55,7 @@
             android:name=".PreviewReportBoundary"
             android:exported="false" />
         <activity
-            android:name=".AdminHomepage"
-            android:exported="true">
-            android:name=".ChooseCategoryBoundary"
+            android:name=".HomePageBoundary"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -62,7 +66,6 @@
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
         <activity android:name=".ReportList" />
-        <activity android:name=".HomePageBoundary" />
     </application>
 
 </manifest>

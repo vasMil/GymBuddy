@@ -11,27 +11,24 @@ import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.ListView
 import android.widget.TextView
-import com.example.myapplication.ReportList.MyCustomAdopter
 
-class GymListBoundary : AppCompatActivity() {
+class HoursListBoundary : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gym_list_boundary)
-
+        setContentView(R.layout.activity_hours_list_boundary)
         val actionBar = supportActionBar
 
-        actionBar!!.title = "Gym List"
+        actionBar!!.title = "Hours List"
 
         actionBar.setDisplayHomeAsUpEnabled(true)
-        val listView = findViewById<ListView>(R.id.gym_listView)
-        listView.adapter = MyCustomAdopter2(this)
-
+        val listView = findViewById<ListView>(R.id.hours_listview)
+        listView.adapter = MyCustomAdopter3(this)
     }
 
-    inner class MyCustomAdopter2(context: Context): BaseAdapter() {
+    inner class MyCustomAdopter3(context: Context): BaseAdapter() {
         private val mContext: Context
         private val names = arrayListOf<String>(
-            "Gym 1", "Gym 2", "Gym 3", "Gym 4"
+            "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"
         )
 
         init {
@@ -40,17 +37,17 @@ class GymListBoundary : AppCompatActivity() {
 
         override fun getView(position: Int, convertView: View?, viewGroup: ViewGroup?): View {
             val layoutInflater = LayoutInflater.from(mContext)
-            val gymlist = layoutInflater.inflate(R.layout.gym_list_item, viewGroup, false)
-            val nametextView = gymlist.findViewById<TextView>(R.id.name_textView)
+            val hourslist = layoutInflater.inflate(R.layout.hours_list_item, viewGroup, false)
+            val nametextView = hourslist.findViewById<TextView>(R.id.hour)
             nametextView.text = names.get(position)
 
-            val report_btn = gymlist.findViewById<Button>(R.id.pick_gym_btn)
+            val report_btn = hourslist.findViewById<Button>(R.id.pick_hour_btn)
             report_btn.text = "See report $position"
             report_btn.setOnClickListener { view ->
-                val intent = Intent(this@GymListBoundary, HoursListBoundary::class.java)
+                val intent = Intent(this@HoursListBoundary, TrainersListBoundary::class.java)
                 startActivity(intent) }
 
-            return gymlist
+            return hourslist
         }
 
         override fun getItem(position: Int): Any {
@@ -64,5 +61,5 @@ class GymListBoundary : AppCompatActivity() {
         override fun getCount(): Int {
             return names.size
         }
-        }
+    }
 }

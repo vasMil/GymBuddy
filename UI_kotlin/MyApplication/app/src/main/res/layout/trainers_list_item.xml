@@ -4,25 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <TextView
-        android:id="@+id/gym_name"
+        android:id="@+id/trainer_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
-        android:text="Gym Name"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="32dp"
+        android:text="Name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/pick_gym_btn"
+        android:id="@+id/check_trainer_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="292dp"
-        android:text="Pick"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="16dp"
+        android:text="Check"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

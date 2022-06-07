@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.widget.Button
 
 class ReportService : AppCompatActivity() {
-        var reports: MutableList<Reports> = mutableListOf()
+       // var reports: MutableList<Reports> = mutableListOf()
         init {
             fetchReports()
         }
 
     private fun fetchReports() {
-        if(reports.isNotEmpty()) {
-            return;
+       // if(reports.isNotEmpty()) {
+            //return;
         }
         //val reportButton = findViewById<Button>(R.id.report_btn)
 
@@ -22,4 +22,3 @@ class ReportService : AppCompatActivity() {
 
 
 
-}

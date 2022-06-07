@@ -4,7 +4,7 @@ class WorkoutDay(name: String, exercises: Exercise) {
     var name = name
     var exercises : Exercise = exercises
 
-    override fun fetchExercises() {
+    /*override fun fetchExercises() {
         val standingBumbellCurl = Exercise("Standing Bumbell Curl", 4, 10, UserLevel.BEGINNER)
         val standingBarbellCurl = Exercise("Standing Barbell Curl", 4, 10, UserLevel.BEGINNER)
         val ezBarPreacherCurl = Exercise("EZ-Bar Preacher Curl", 4, 10, UserLevel.BEGINNER, 130, 0)
@@ -16,5 +16,5 @@ class WorkoutDay(name: String, exercises: Exercise) {
             listOf(standingBumbellCurl, standingBarbellCurl, ezBarPreacherCurl,
                 crucifixCurl, hammerCurl, tricepsPressdown, ezBarSkullCrushers)
         )
-    }
+    }*/
 }
