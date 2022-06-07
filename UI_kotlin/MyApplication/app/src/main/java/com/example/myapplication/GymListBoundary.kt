@@ -16,6 +16,6 @@ class GymListBoundary : AppCompatActivity() {
 
         actionBar.setDisplayHomeAsUpEnabled(true)
         val listView = findViewById<ListView>(R.id.gym_listView)
-        listView.adapter = (this)
+
     }
 }
