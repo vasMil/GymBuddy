@@ -45,7 +45,7 @@
             tools:ignore="Instantiatable" />
 
         <activity
-            android:name=".AdminHomepage"
+            android:name=".ReportList"
             android:exported="true">
 
             <intent-filter>
@@ -57,7 +57,7 @@
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
 
-        <activity android:name=".ReportList" />
+         />
 
     </application>
 

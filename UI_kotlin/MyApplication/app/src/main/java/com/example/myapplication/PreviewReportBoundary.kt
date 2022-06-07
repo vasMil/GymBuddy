@@ -13,6 +13,7 @@ class PreviewReportBoundary : AppCompatActivity() {
             title = "Report"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
             fetchReports()
+            var Report = intent.getSerializableExtra("Report")
         }
     }
 
