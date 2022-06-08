@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 
 class ReportService : AppCompatActivity() {
-        var reports: MutableList<Reports> = mutableListOf()
+/*        var reports: MutableList<Reports> = mutableListOf()
         init {
             fetchReports()
         }
@@ -18,7 +18,7 @@ class ReportService : AppCompatActivity() {
 
 
 
-    }
+    }*/
 
 
 

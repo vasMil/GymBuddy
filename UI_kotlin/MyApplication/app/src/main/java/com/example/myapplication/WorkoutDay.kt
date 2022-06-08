@@ -1,7 +1,7 @@
 package com.example.myapplication
 
 class WorkoutDay(name: String, exercises: Exercise) {
-    var name = name
+/*    var name = name
     var exercises : Exercise = exercises
 
     override fun fetchExercises() {
@@ -16,5 +16,5 @@ class WorkoutDay(name: String, exercises: Exercise) {
             listOf(standingBumbellCurl, standingBarbellCurl, ezBarPreacherCurl,
                 crucifixCurl, hammerCurl, tricepsPressdown, ezBarSkullCrushers)
         )
-    }
+    }*/
 }
