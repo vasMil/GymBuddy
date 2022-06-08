@@ -37,13 +37,12 @@ class HomePageBoundary : AppCompatActivity() {
 
         // If the Athlete has selected a workout plan then he may view it
         // else he has the option to find - create one
-        viewWorkout.setOnClickListener {
-            if(UserSession.getUser<Athlete>().workoutPlan != null) {
-                // TODO: Small use case we have not developed
-                viewWorkout.text = "View workout plan"
-            }
-            else {
-                viewWorkout.text = "Find a workout plan"
+        if(UserSession.getUser<Athlete>().workoutPlan != null) {
+            viewWorkout.text = "View workout plan"
+        }
+        else {
+            viewWorkout.text = "Find a workout plan"
+            viewWorkout.setOnClickListener {
                 val intentFindWorkout = Intent(this, FindWorkoutPlanBoundary::class.java)
                 startActivity(intentFindWorkout)
             }

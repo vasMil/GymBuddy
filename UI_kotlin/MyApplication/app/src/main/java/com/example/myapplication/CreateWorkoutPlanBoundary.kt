@@ -64,9 +64,44 @@ class CreateWorkoutPlanBoundary : AppCompatActivity() {
     }
 
     private fun onContinue() {
-        val weigth = findViewById<EditText>(R.id.editText_weight)?.text
-        val height = findViewById<EditText>(R.id.editText_height)?.text
-        val days = findViewById<EditText>(R.id.editText_daysPerWeek)?.text
+        if (btnIdClicked == null) {
+            Toast.makeText(this@CreateWorkoutPlanBoundary,
+                "You must select the level of the athlete!", Toast.LENGTH_SHORT).show()
+            return
+        }
+        val weight = findViewById<EditText>(R.id.editText_weight).text
+        val height = findViewById<EditText>(R.id.editText_height).text
+        val days = findViewById<EditText>(R.id.editText_daysPerWeek).text
+        if (weight.isEmpty() || height.isEmpty() || days.isEmpty()) {
+            Toast.makeText(
+                this@CreateWorkoutPlanBoundary,
+                "Weight, height or days of workout is empty!", Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+        if(weight.toString().toInt() > 300 || weight.toString().toInt() <= 0) {
+            Toast.makeText(
+                this@CreateWorkoutPlanBoundary,
+                "Weight is invalid!", Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+        if(height.toString().toInt() > 350 || height.toString().toInt() <= 0) {
+            Toast.makeText(
+                this@CreateWorkoutPlanBoundary,
+                "Height is invalid!", Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+        if(days.toString().toInt() > 7 || height.toString().toInt() <= 0) {
+            Toast.makeText(
+                this@CreateWorkoutPlanBoundary,
+                "Days of workout is invalid!", Toast.LENGTH_SHORT
+            ).show()
+            return
+        }
+
+        // All values are acceptable - allow use case to progress
 
     }
 }
