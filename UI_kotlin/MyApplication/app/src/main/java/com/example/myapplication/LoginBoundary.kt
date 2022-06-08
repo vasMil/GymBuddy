@@ -30,7 +30,7 @@ class LoginBoundary : AppCompatActivity() {
                 return@setOnClickListener
             }
             UserSession.getUser<Athlete>().weight;
-            val intent = Intent(this, UserProfile::class.java)
+            val intent = Intent(this, HomePageBoundary::class.java)
             startActivity(intent)
         }
     }

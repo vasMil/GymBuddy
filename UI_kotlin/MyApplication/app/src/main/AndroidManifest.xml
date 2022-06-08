@@ -10,13 +10,11 @@
         android:supportsRtl="true"
 
 
-        android:theme="@style/Theme.MyApplication" >
         android:theme="@style/Theme.MyApplication">
-        <activity
 
+        <activity
             android:name=".WorkoutPageBoundary"
             android:exported="false" />
-
         <activity
             android:name=".LoginBoundary"
             android:exported="false" />
@@ -29,7 +27,6 @@
         <activity
             android:name=".MapBoundary"
             android:exported="false" />
-
         <activity
             android:name=".UploadDocumentsBoundary"
             android:exported="false" />
@@ -50,7 +47,6 @@
             android:name=".Ranking"
             android:exported="false" />
         <activity
-
             android:name=".AdminHomepage"
             android:exported="true" />
 
@@ -61,16 +57,10 @@
 
 
         <activity
-            android:name=".MainActivity"
+            android:name=".HomePageBoundary"
             android:exported="true">
-
-
-            android:name=".ChooseCategoryBoundary"
-            android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -81,11 +71,10 @@
 
         <activity android:name=".ReportList" />
 
-        <activity android:name=".HomePageBoundary" />
+        <activity android:name=".MainActivity" />
 
         <activity android:name=".FindWorkoutPlanBoundary" />
-
-
+        <activity android:name=".CreateWorkoutPlanBoundary" />
     </application>
 
 </manifest>

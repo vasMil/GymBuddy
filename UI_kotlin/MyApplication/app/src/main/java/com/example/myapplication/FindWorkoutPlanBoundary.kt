@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
@@ -23,7 +24,9 @@ class FindWorkoutPlanBoundary : AppCompatActivity() {
 
         // Add event listeners
         createWorkoutPlan.setOnClickListener {
-            // TODO: Move to createWorkoutPlanBoundary
+            val intentCreateWorkoutPlan = Intent(this,
+                CreateWorkoutPlanBoundary::class.java)
+            startActivity(intentCreateWorkoutPlan)
         }
     }
 

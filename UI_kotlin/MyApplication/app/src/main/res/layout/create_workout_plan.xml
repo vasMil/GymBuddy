@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_weightHeight"
+        android:layout_width="218dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Insert the weight and height:"
+        android:textColor="@color/main_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/disclaimer_info"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/disclaimer_info"
+        android:layout_width="159dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="84dp"
+        android:text="*This information will remain private. The only use for it is to find a program that will fit you best!"
+        android:textColor="@color/main_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_timesPerWeek"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_timesPerWeek"
+        android:layout_width="212dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="88dp"
+        android:text="How often will you be training in a week?"
+        android:textColor="@color/main_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/workoutPlan_continue"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_weight"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:gravity="center"
+        android:hint="@string/weight"
+        android:inputType="number"
+        android:textColor="@color/main_color"
+        android:textColorHint="@color/grey"
+        android:textColorLink="@color/main_color"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userLevelView" />
+
+    <EditText
+        android:id="@+id/editText_height"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:gravity="center"
+        android:hint="@string/height"
+        android:inputType="number"
+        android:textColor="@color/main_color"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_weight" />
+
+    <EditText
+        android:id="@+id/editText_daysPerWeek"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:fontFamily="@font/aoboshi_one_regular"
+        android:gravity="center"
+        android:hint="4 days"
+        android:inputType="number"
+        android:textColor="@color/main_color"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/workoutPlan_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:layout_marginBottom="61dp"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/userLevelView"
+        android:layout_width="166dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginRight="123dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/button_intermediate"
+            android:layout_width="155dp"
+            android:layout_height="48dp"
+            android:text="@string/intermediate"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_beginner"
+            android:layout_width="107dp"
+            android:layout_height="53dp"
+            android:text="@string/beginner"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_advanced"
+            android:layout_width="124dp"
+            android:layout_height="50dp"
+            android:text="@string/advanced"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
