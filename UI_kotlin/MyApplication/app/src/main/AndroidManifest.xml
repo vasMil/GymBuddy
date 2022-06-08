@@ -81,11 +81,9 @@
 
         <activity android:name=".ReportList" />
 
-
-
         <activity android:name=".HomePageBoundary" />
 
-
+        <activity android:name=".FindWorkoutPlanBoundary" />
 
 
     </application>

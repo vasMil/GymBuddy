@@ -30,7 +30,7 @@ object NavigationUtils {
                     true
                 }
                 R.id.nav_home -> {
-                    // TODO: implement navigation to home
+                    activity.startActivity(Intent(activity, HomePageBoundary::class.java))
                     true
                 }
                 else -> {
