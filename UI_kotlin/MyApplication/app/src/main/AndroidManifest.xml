@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".TrainerProfileBoundary"
+            android:exported="false" />
+        <activity
             android:name=".TrainersListBoundary"
             android:exported="false" />
         <activity

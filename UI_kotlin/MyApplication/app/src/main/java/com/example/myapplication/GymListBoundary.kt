@@ -42,10 +42,10 @@ class GymListBoundary : AppCompatActivity() {
             val layoutInflater = LayoutInflater.from(mContext)
             val gymlist = layoutInflater.inflate(R.layout.gym_list_item, viewGroup, false)
             val nametextView = gymlist.findViewById<TextView>(R.id.name_textView)
-            nametextView.text = names.get(position)
+
 
             val report_btn = gymlist.findViewById<Button>(R.id.pick_gym_btn)
-            report_btn.text = "See report $position"
+            report_btn.text = "Pick"
             report_btn.setOnClickListener { view ->
                 val intent = Intent(this@GymListBoundary, HoursListBoundary::class.java)
                 startActivity(intent) }

@@ -42,7 +42,7 @@ class HoursListBoundary : AppCompatActivity() {
             nametextView.text = names.get(position)
 
             val report_btn = hourslist.findViewById<Button>(R.id.pick_hour_btn)
-            report_btn.text = "See report $position"
+            report_btn.text = "Pick"
             report_btn.setOnClickListener { view ->
                 val intent = Intent(this@HoursListBoundary, TrainersListBoundary::class.java)
                 startActivity(intent) }
