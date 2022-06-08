@@ -134,17 +134,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
-            android:id="@+id/button_intermediate"
-            android:layout_width="155dp"
-            android:layout_height="48dp"
-            android:text="@string/intermediate"
-            android:textAllCaps="false" />
-
-        <Button
             android:id="@+id/button_beginner"
             android:layout_width="107dp"
             android:layout_height="53dp"
             android:text="@string/beginner"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button_intermediate"
+            android:layout_width="155dp"
+            android:layout_height="48dp"
+            android:text="@string/intermediate"
             android:textAllCaps="false" />
 
         <Button

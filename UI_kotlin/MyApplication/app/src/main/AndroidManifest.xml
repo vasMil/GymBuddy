@@ -73,8 +73,9 @@
 
         <activity android:name=".MainActivity" />
 
-        <activity android:name=".FindWorkoutPlanBoundary" />
-        <activity android:name=".CreateWorkoutPlanBoundary" />
+        <activity android:name=".FindWorkoutPlanBoundary"/>
+        <activity android:name=".CreateWorkoutPlanBoundary"/>
+        <activity android:name=".SetupDayOfWorkoutBoundary"/>
     </application>
 
 </manifest>

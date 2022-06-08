@@ -1,9 +1,9 @@
 package com.example.myapplication
 
-class WorkoutDay(name: String, exercises: Exercise) {
-/*    var name = name
-    var exercises : Exercise = exercises
-
+class WorkoutDay(name: String, exercises: Array<Exercise>) {
+    var name = name
+    var exercises : Array<Exercise> = exercises
+/*
     override fun fetchExercises() {
         val standingBumbellCurl = Exercise("Standing Bumbell Curl", 4, 10, UserLevel.BEGINNER)
         val standingBarbellCurl = Exercise("Standing Barbell Curl", 4, 10, UserLevel.BEGINNER)
@@ -16,5 +16,6 @@ class WorkoutDay(name: String, exercises: Exercise) {
             listOf(standingBumbellCurl, standingBarbellCurl, ezBarPreacherCurl,
                 crucifixCurl, hammerCurl, tricepsPressdown, ezBarSkullCrushers)
         )
-    }*/
+    }
+*/
 }

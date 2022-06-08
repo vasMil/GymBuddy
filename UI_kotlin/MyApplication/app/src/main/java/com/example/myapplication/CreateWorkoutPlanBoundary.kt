@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -93,7 +94,7 @@ class CreateWorkoutPlanBoundary : AppCompatActivity() {
             ).show()
             return
         }
-        if(days.toString().toInt() > 7 || height.toString().toInt() <= 0) {
+        if(days.toString().toInt() > 7 || days.toString().toInt() <= 0) {
             Toast.makeText(
                 this@CreateWorkoutPlanBoundary,
                 "Days of workout is invalid!", Toast.LENGTH_SHORT
@@ -102,6 +103,15 @@ class CreateWorkoutPlanBoundary : AppCompatActivity() {
         }
 
         // All values are acceptable - allow use case to progress
-
+        val minUserLevel = when (btnIdClicked) {
+            beginnerBtn.id -> UserLevel.BEGINNER
+            intermediateBtn.id -> UserLevel.INTERMEDIATE
+            else -> UserLevel.ADVANCED
+        }
+        val workoutPlan = WorkoutPlan(days.toString().toInt(), weight.toString().toInt(),
+            height.toString().toInt(), "Custom Workout Plan", 123, minUserLevel)
+        val intentSetupDay = Intent(this, SetupDayOfWorkoutBoundary::class.java)
+        intentSetupDay.putExtra("workoutPlan", workoutPlan);
+        startActivity(intentSetupDay)
     }
 }
