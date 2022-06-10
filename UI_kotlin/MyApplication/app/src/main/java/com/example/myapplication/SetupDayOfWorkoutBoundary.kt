@@ -1,19 +1,21 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class SetupDayOfWorkoutBoundary : AppCompatActivity() {
-    private var dayIndex = 1
+    private var dayIndex = WorkoutPlanBuilder.dayCount
     private var exerciseIndex = 0
     private var categories: Array<ExerciseCategory>
-    private lateinit var workoutPlan: WorkoutPlan
     private var selectedCategories: MutableList<ExerciseCategory> = mutableListOf()
     private lateinit var isSelected: Array<Boolean>
 
@@ -30,14 +32,38 @@ class SetupDayOfWorkoutBoundary : AppCompatActivity() {
             title = "Setup day - $dayIndex"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
-        workoutPlan = intent.getSerializableExtra("workoutPlan") as WorkoutPlan
         displayCategories()
 
         val doneBtn = findViewById<Button>(R.id.done_button)
         doneBtn.setOnClickListener {
-            // TODO: Intent to a boundary displaying all the exercises included in each category
-            // Do not forget to putExtra both the WorkoutPlan as well as the categories
+            onDone()
         }
+    }
+
+    private fun onDone() {
+        // Update Builder
+        WorkoutPlanBuilder.currentDayCategories = selectedCategories.toTypedArray()
+
+        // Check whether categories are selected
+        if(selectedCategories.size <= 0) {
+            Toast.makeText(this@SetupDayOfWorkoutBoundary,
+                "You need to select at least one exercise category!",
+                Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        // Check if a name is set
+        val nameInp = findViewById<EditText>(R.id.dayNameInp)
+        if(nameInp.text.isEmpty()) {
+            Toast.makeText(this@SetupDayOfWorkoutBoundary,
+                "You need to set a name for this workout day!",
+                Toast.LENGTH_SHORT).show()
+            return
+        }
+        // Update WorkoutPlanBuilder
+        WorkoutPlanBuilder.currentDayName = nameInp.text.toString()
+        // Intent to ChooseExercisesBoundary
+        startActivity(Intent(this, ChooseExercisesBoundary::class.java))
     }
 
     private fun displayCategories() {

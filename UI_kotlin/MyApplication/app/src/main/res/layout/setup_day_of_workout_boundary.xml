@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/dayNameInp"
         android:layout_width="133dp"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
@@ -43,7 +43,7 @@
         android:contentDescription="@string/choose_a_category"
         android:fillViewport="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName">
+        app:layout_constraintTop_toBottomOf="@+id/dayNameInp">
 
         <LinearLayout
             android:id="@+id/categories_nestedView"

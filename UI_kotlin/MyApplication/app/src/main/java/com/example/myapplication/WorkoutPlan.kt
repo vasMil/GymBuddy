@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import com.google.gson.Gson
 import java.io.Serializable
 
 class WorkoutPlan(numOfDays : Int, idealAthWeight: Int, idealAthHeight: Int, name: String, id: Int)
@@ -16,5 +17,10 @@ class WorkoutPlan(numOfDays : Int, idealAthWeight: Int, idealAthHeight: Int, nam
                 idealAthHeight: Int, name: String, id: Int, minAthLevel: UserLevel)
      : this (numOfDays, idealAthWeight, idealAthHeight, name, id) {
         this.minAthLevel = minAthLevel
+    }
+
+    fun deepCopy(): WorkoutPlan? {
+        val json = Gson().toJson(this)
+        return Gson().fromJson(json, WorkoutPlan::class.java)
     }
 }

@@ -108,10 +108,10 @@ class CreateWorkoutPlanBoundary : AppCompatActivity() {
             intermediateBtn.id -> UserLevel.INTERMEDIATE
             else -> UserLevel.ADVANCED
         }
-        val workoutPlan = WorkoutPlan(days.toString().toInt(), weight.toString().toInt(),
+        // Get the builder initialized
+        WorkoutPlanBuilder.initWorkoutPlan(days.toString().toInt(), weight.toString().toInt(),
             height.toString().toInt(), "Custom Workout Plan", 123, minUserLevel)
         val intentSetupDay = Intent(this, SetupDayOfWorkoutBoundary::class.java)
-        intentSetupDay.putExtra("workoutPlan", workoutPlan);
         startActivity(intentSetupDay)
     }
 }
