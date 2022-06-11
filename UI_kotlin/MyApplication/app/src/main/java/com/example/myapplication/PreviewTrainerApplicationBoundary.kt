@@ -31,7 +31,7 @@ class PreviewTrainerApplicationBoundary : AppCompatActivity() {
         submitBtn.setOnClickListener {
             Toast.makeText(this@PreviewTrainerApplicationBoundary,
                 "Application Submitted!", Toast.LENGTH_SHORT).show()
-            // TODO: Attach application on user (use UserSession)
+            UserSession.getUser<Athlete>().trainerApplication = trainerApplication
             startActivity(Intent(this, UserProfile::class.java))
         }
     }

@@ -11,7 +11,9 @@ open class User(name: String, id: Int) : UserInterface {
     var age: Int? = null
     var isBanned = false
         set(value) {
-            // TODO: Check if admin
+            if(UserSession.getUser<Admin>() == null) {
+                return
+            }
             field = true
         }
 

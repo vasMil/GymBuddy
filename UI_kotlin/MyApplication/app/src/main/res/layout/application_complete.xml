@@ -11,11 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="75dp"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="236dp"
         android:fontFamily="@font/aoboshi_one_regular"
-        android:text="Application Approved!"
+        android:text="Application Evaluated!"
         android:textAlignment="center"
         android:textColor="@color/main_color"
         android:textSize="24sp"
@@ -26,7 +26,27 @@
         android:id="@+id/reasonOfDenial"
         android:layout_width="340dp"
         android:layout_height="106dp"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="393dp" />
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/applicationMessage" />
+
+    <Button
+        android:id="@+id/goToProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="83dp"
+        android:text="Go to Profile"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reasonOfDenial" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

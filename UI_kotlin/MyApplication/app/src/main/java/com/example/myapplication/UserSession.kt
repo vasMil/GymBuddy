@@ -45,4 +45,11 @@ object UserSession {
         }
         throw Exception("There is no UserSession!")
     }
+
+    fun bypassAdminCheck() {
+        admin = authService.authUser("admin", "admin") as Admin
+    }
+    fun removeAdminCredentials() {
+        admin = null
+    }
 }

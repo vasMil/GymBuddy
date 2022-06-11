@@ -32,10 +32,14 @@ class TrainerApplication(userDocuments: String) : Serializable {
         }
 
     private fun returnIfNotAdmin() {
-        // TODO: Check if UserSession returns an Admin
+        if(UserSession.getUser<Admin>() == null) {
+            return
+        }
     }
 
     private fun returnIfNotAthlete() {
-        // TODO: Check if UserSession returns an Athlete
+        if(UserSession.getUser<Athlete>() == null) {
+            return
+        }
     }
 }

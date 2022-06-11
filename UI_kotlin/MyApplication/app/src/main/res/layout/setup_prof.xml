@@ -139,6 +139,32 @@
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/profile_imageView" />
+
+        <Switch
+            android:id="@+id/adminAccepts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:text="Admin Accepts"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BecomeTrainer_button"
+            tools:visibility="gone" />
+
+        <Switch
+            android:id="@+id/adminRejects"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="Admin Rejects"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@+id/adminAccepts"
+            app:layout_constraintTop_toBottomOf="@+id/BecomeTrainer_button"
+            tools:visibility="gone" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

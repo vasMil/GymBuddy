@@ -14,7 +14,7 @@ class UploadDocumentsBoundary : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.upload_documents)
         supportActionBar?.apply {
-            title = "Upload Certificates"
+            title = "Upload Documents"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
         uploadDocuments()
