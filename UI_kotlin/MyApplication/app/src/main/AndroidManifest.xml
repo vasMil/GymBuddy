@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
     package="com.example.myapplication">
+
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication" >
+
 
     <application
         android:allowBackup="true"
@@ -32,11 +37,20 @@
             android:exported="false" />
 
 
+        <activity
+            android:name=".Ranking"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+
 
         <activity
             android:name=".RegisterAttemptBoundary"
             android:exported="false" />
         <activity
+
             android:name=".Leaderboard"
             android:exported="false" />
         <activity
@@ -49,6 +63,15 @@
         <activity
             android:name=".AdminHomepage"
             android:exported="true" />
+
+            android:name=".Report"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name=".ReportList"
+            android:exported="true"/>
+
 
 
         <activity
@@ -69,7 +92,7 @@
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
 
-        <activity android:name=".ReportList" />
+         />
 
         <activity android:name=".MainActivity" />
 
