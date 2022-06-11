@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
     package="com.example.myapplication">
-
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication" >
-
 
     <application
         android:allowBackup="true"
@@ -13,10 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-
-
         android:theme="@style/Theme.MyApplication">
-
+        <activity
+            android:name=".ReasonOfDenialBoundary"
+            android:exported="false" />
         <activity
             android:name=".WorkoutPageBoundary"
             android:exported="false" />
@@ -35,71 +30,48 @@
         <activity
             android:name=".UploadDocumentsBoundary"
             android:exported="false" />
-
-
         <activity
             android:name=".Ranking"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
-
-
-
         <activity
             android:name=".RegisterAttemptBoundary"
             android:exported="false" />
         <activity
-
             android:name=".Leaderboard"
             android:exported="false" />
         <activity
             android:name=".LeaderboardBoundary"
             android:exported="false" />
-
-        <activity
-            android:name=".Ranking"
-            android:exported="false" />
         <activity
             android:name=".AdminHomepage"
             android:exported="true" />
-
-            android:name=".Report"
-            android:exported="false"
-            tools:ignore="Instantiatable" />
-
         <activity
             android:name=".ReportList"
-            android:exported="true"/>
-
-
-
+            android:exported="true" />
         <activity
             android:name=".PreviewReportBoundary"
             android:exported="false" />
-
-
         <activity
             android:name=".HomePageBoundary"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
-
-         />
-
-        <activity android:name=".MainActivity" />
-
-        <activity android:name=".FindWorkoutPlanBoundary"/>
-        <activity android:name=".CreateWorkoutPlanBoundary"/>
-        <activity android:name=".SetupDayOfWorkoutBoundary"/>
-        <activity android:name=".ChooseExercisesBoundary"/>
+        <activity android:name=".FindWorkoutPlanBoundary" />
+        <activity android:name=".CreateWorkoutPlanBoundary" />
+        <activity android:name=".SetupDayOfWorkoutBoundary" />
+        <activity android:name=".ChooseExercisesBoundary" />
+        <activity
+            android:name=".Request_List_Boundary"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -17,15 +17,16 @@ class PreviewReportBoundary : AppCompatActivity() {
         }
     }
 
+    private fun fetchReports() {
+        TODO("Not yet implemented")
+    }
+
 
     private fun displayReports() {
         // fetch the reports
         // report.fetchReports()
 
 
-
-    private fun fetchReports() {
-        TODO("Not yet implemented")
 
     }
 }
