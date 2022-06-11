@@ -46,18 +46,16 @@
         <activity
             android:name=".LeaderboardBoundary"
             android:exported="false" />
+
         <activity
-            android:name=".AdminHomepage"
-            android:exported="true" />
-        <activity
-            android:name=".ReportList"
+            android:name=".ReportListBoundary"
             android:exported="true" />
         <activity
             android:name=".PreviewReportBoundary"
             android:exported="false" />
 
         <activity
-            android:name=".HomePageBoundary"
+            android:name=".AdminHomepage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

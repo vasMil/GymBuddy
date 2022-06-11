@@ -6,20 +6,19 @@ import android.os.Bundle
 import android.widget.LinearLayout
 
 class PreviewReportBoundary : AppCompatActivity() {
+    private val reportService: ReportService = ReportService()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_preview_report_boundary)
         supportActionBar?.apply {
             title = "Report"
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
-            fetchReports()
-            var Report = intent.getSerializableExtra("Report")
+            reportService.fetchReports()
+            var report = intent.getSerializableExtra("Report")
         }
     }
 
-    private fun fetchReports() {
-        TODO("Not yet implemented")
-    }
+
 
 
     private fun displayReports() {

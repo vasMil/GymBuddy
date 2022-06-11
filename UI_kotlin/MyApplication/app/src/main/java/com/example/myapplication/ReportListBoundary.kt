@@ -13,7 +13,7 @@ import android.widget.ListView
 import android.widget.TextView
 
 
-class ReportList : AppCompatActivity() {
+class ReportListBoundary : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.report_list)
@@ -43,8 +43,11 @@ class ReportList : AppCompatActivity() {
             val report_btn = rowMain.findViewById<Button>(R.id.report_btn)
             report_btn.text = "See report $position"
             report_btn.setOnClickListener{view ->
-                val intent = Intent(this@ReportList, PreviewReportBoundary::class.java)
-                startActivity(intent)}
+                val intent = Intent(this@ReportListBoundary, PreviewReportBoundary::class.java)
+                intent.putExtra("report", report )
+                startActivity(intent)
+
+            }
 
             return rowMain
 
