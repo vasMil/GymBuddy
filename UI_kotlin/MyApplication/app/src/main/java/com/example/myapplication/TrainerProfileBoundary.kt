@@ -19,6 +19,8 @@ class TrainerProfileBoundary : AppCompatActivity() {
         val reject = findViewById<Button>(R.id.Reject)
 
         sendrequest.setOnClickListener {
+            Toast.makeText(this@TrainerProfileBoundary,
+                "Request Sent to Trainer", Toast.LENGTH_SHORT).show()
             val intent = Intent (this, HomePageBoundary ::class.java)
             startActivity(intent)
         }

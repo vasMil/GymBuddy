@@ -21,7 +21,7 @@ class TrainersListBoundary : AppCompatActivity() {
         actionBar!!.title = "Trainers List"
 
         actionBar.setDisplayHomeAsUpEnabled(true)
-        val listView = findViewById<ListView>(R.id.hours_listview)
+        val listView = findViewById<ListView>(R.id.trainers_listview)
         listView.adapter = MyCustomAdopter4(this)
     }
 
