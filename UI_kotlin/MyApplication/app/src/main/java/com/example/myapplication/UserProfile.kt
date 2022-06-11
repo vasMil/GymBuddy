@@ -40,7 +40,7 @@ class UserProfile : AppCompatActivity() {
         val buttonBecomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
         // set on-click listener
         buttonBecomeTrainer.setOnClickListener {
-            val intent = Intent(this, UploadCertificates::class.java)
+            val intent = Intent(this, UploadDocumentsBoundary::class.java)
             startActivity(intent)   }
     }
 }

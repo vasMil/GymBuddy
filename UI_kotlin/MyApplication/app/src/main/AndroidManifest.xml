@@ -11,7 +11,7 @@
         android:theme="@style/Theme.MyApplication">
 
 
-        <activity android:name=".ChooseCategoryBoundary"
+        <activity android:name=".UserProfile"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +19,12 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".UserProfile"></activity>
-        <activity android:name=".ChooseExerciseBoundary"></activity>
+        <activity android:name=".ChooseCategoryBoundary" />
+        <activity android:name=".ChooseExerciseBoundary" />
         <!--        <activity android:name=".ApplicationDeniedBoundary" android:parentActivityName=".TrainerApplicationBoundary"></activity>-->
         <!--        <activity android:name=".ApplicationCompleteBoundary" android:parentActivityName=".TrainerApplicationBoundary"></activity>-->
-        <activity android:name=".TrainerApplicationBoundary" android:parentActivityName=".UploadDocs"></activity>
-        <activity android:name=".UploadDocs" android:parentActivityName=".UploadCertificates"></activity>
-        <activity android:name= ".UploadCertificates" android:parentActivityName=".UserProfile" ></activity>
+        <activity android:name=".PreviewTrainerApplicationBoundary" />
+        <activity android:name=".UploadDocumentsBoundary" />
         <activity android:name=".Ranking" android:exported="false"/>
     </application>
 
