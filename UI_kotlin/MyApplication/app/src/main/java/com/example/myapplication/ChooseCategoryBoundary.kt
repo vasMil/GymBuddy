@@ -13,6 +13,7 @@ import java.io.Serializable
 class ChooseCategoryBoundary : AppCompatActivity() {
     private var categories: Array<ExerciseCategory>
     private var exerciseIndex = 0
+    private var rankingUseCase = false
 
     init {
         val categoryService = CategoryService()
@@ -28,6 +29,8 @@ class ChooseCategoryBoundary : AppCompatActivity() {
         }
         setContentView(R.layout.choose_category_boundary)
         displayCategories()
+
+        rankingUseCase = intent.getBooleanExtra("rankingUseCase", false)
     }
 
     private fun displayCategories() {
@@ -63,6 +66,7 @@ class ChooseCategoryBoundary : AppCompatActivity() {
         // Create the instance and move to it
         val intent = Intent(this, ChooseExerciseBoundary::class.java)
         intent.putExtra("category", category as Serializable)
+        intent.putExtra("rankingUseCase", rankingUseCase)
         startActivity(intent)
     }
 }

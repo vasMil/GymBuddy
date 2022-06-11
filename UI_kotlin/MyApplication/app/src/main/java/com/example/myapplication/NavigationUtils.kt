@@ -26,7 +26,9 @@ object NavigationUtils {
                     true
                 }
                 R.id.ranking -> {
-                    activity.startActivity(Intent(activity, Ranking::class.java))
+                    val intentRanking = Intent(activity, ChooseCategoryBoundary::class.java)
+                    intentRanking.putExtra("rankingUseCase", true)
+                    activity.startActivity(intentRanking)
                     true
                 }
                 R.id.nav_home -> {

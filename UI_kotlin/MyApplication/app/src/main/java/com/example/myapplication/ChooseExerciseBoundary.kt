@@ -22,6 +22,7 @@ class ChooseExerciseBoundary : AppCompatActivity() {
     private lateinit var category: ExerciseCategory
     private lateinit var confirmButton: Button
     private lateinit var acceptSwitch: Switch
+    private var rankingUseCase = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,7 @@ class ChooseExerciseBoundary : AppCompatActivity() {
             setBackgroundDrawable(ColorDrawable(resources.getColor(R.color.main_color)))
         }
 
+        rankingUseCase = intent.getBooleanExtra("rankingUseCase", false)
 
         this.category = intent.getSerializableExtra("category") as ExerciseCategory
         displayExercises()
@@ -47,9 +49,15 @@ class ChooseExerciseBoundary : AppCompatActivity() {
         exercises = category.exercises.toTypedArray()
         // display buttons
         val exercisesView = findViewById<LinearLayout>(R.id.exerciseScrollView)
-        exercises.forEach { it ->
-            val btn = createExerciseButton(exercisesView, it)
+        exercises.forEach { exercise ->
+            val btn = createExerciseButton(exercisesView, exercise)
             btn.setOnClickListener { itBtn ->
+                if (rankingUseCase) {
+                    val intent = Intent(this, LeaderboardBoundary::class.java)
+                    intent.putExtra("exercise", exercise)
+                    startActivity(intent)
+                    return@setOnClickListener
+                }
                 // TODO: Pass control to "upload a file" use case
                 // Update confirmation button for the upload and display it
                 displayConfirmButton(itBtn.tag.toString().split("_")[1].toInt())
@@ -72,13 +80,6 @@ class ChooseExerciseBoundary : AppCompatActivity() {
         btn.isAllCaps = false
         btn.textSize = 15f
         layout.addView(btn)
-        btn.setOnClickListener {
-            val intent = Intent(this, LeaderboardBoundary::class.java)
-            intent.putExtra("exercise", exercise as Serializable)
-            startActivity(intent)
-        }
-
-
         return btn
     }
 
