@@ -63,6 +63,10 @@ class HomePageBoundary : AppCompatActivity() {
         }
 
          */
+    findTrainer.setOnClickListener {
+        val intent = Intent (this, GymListBoundary ::class.java)
+        startActivity(intent)
+        }
     }
 
     private fun setupNavigation() {

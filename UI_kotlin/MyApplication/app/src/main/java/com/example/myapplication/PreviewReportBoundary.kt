@@ -24,9 +24,6 @@ class PreviewReportBoundary : AppCompatActivity() {
     private fun displayReports() {
         // fetch the reports
         // report.fetchReports()
-
-
-
     }
 }
 

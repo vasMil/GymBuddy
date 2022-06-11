@@ -20,7 +20,8 @@ class AdminHomepage : AppCompatActivity() {
 
         val reportListBtn = findViewById<Button>(R.id.report_listBtn)
         reportListBtn.setOnClickListener {
-            val intent = Intent(this , ReportList::class.java)
+//            val intent = Intent(this, ReportList::class.java)
+        }
 
         val report_listBtn = findViewById<Button>(R.id.report_listBtn)
         report_listBtn.setOnClickListener {

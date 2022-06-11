@@ -44,8 +44,8 @@ class ReportListBoundary : AppCompatActivity() {
             report_btn.text = "See report $position"
             report_btn.setOnClickListener{view ->
                 val intent = Intent(this@ReportListBoundary, PreviewReportBoundary::class.java)
-                intent.putExtra("report", report )
-                startActivity(intent)
+//                intent.putExtra("report", report )
+//                startActivity(intent)
 
             }
 

@@ -3,8 +3,8 @@ package com.example.myapplication
 class WorkoutDay(name: String, exercises: Array<Exercise>) {
     var name = name
     var exercises : Array<Exercise> = exercises
-/*
-    override fun fetchExercises() {
+
+    /*override fun fetchExercises() {
         val standingBumbellCurl = Exercise("Standing Bumbell Curl", 4, 10, UserLevel.BEGINNER)
         val standingBarbellCurl = Exercise("Standing Barbell Curl", 4, 10, UserLevel.BEGINNER)
         val ezBarPreacherCurl = Exercise("EZ-Bar Preacher Curl", 4, 10, UserLevel.BEGINNER, 130, 0)
