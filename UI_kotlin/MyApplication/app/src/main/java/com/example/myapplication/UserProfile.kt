@@ -1,7 +1,6 @@
 package com.example.myapplication
 
 import android.content.Intent
-import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
@@ -72,5 +71,11 @@ class UserProfile : AppCompatActivity() {
     private fun setupNavigation() {
         this.drawerLayout = findViewById(R.id.drawerLayout)
         NavigationUtils.setupNavigation(this, drawerLayout, supportActionBar)
+        //Setup BecomeTrainer button
+        val buttonBecomeTrainer = findViewById<Button>(R.id.BecomeTrainer_button)
+        // set on-click listener
+        buttonBecomeTrainer.setOnClickListener {
+            val intent = Intent(this, UploadDocumentsBoundary::class.java)
+            startActivity(intent)   }
     }
 }

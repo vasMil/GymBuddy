@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+
         <activity
             android:name=".ReasonOfDenialBoundary"
             android:exported="false" />
@@ -54,24 +55,26 @@
         <activity
             android:name=".PreviewReportBoundary"
             android:exported="false" />
+
         <activity
             android:name=".HomePageBoundary"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ChooseExerciseBoundary" />
         <activity android:name=".ChooseCategoryBoundary" />
         <activity android:name=".FindWorkoutPlanBoundary" />
         <activity android:name=".CreateWorkoutPlanBoundary" />
         <activity android:name=".SetupDayOfWorkoutBoundary" />
         <activity android:name=".ChooseExercisesBoundary" />
-        <activity
-            android:name=".Request_List_Boundary"
-            android:exported="false" />
+        <activity android:name=".Request_List_Boundary" android:exported="false" />
+
+        <activity android:name=".ApplicationCompleteBoundary"/>
+        <activity android:name=".PreviewTrainerApplicationBoundary" />
     </application>
 
 </manifest>
