@@ -39,6 +39,10 @@ class HomePageBoundary : AppCompatActivity() {
         // else he has the option to find - create one
         if(UserSession.getUser<Athlete>().workoutPlan != null) {
             viewWorkout.text = "View workout plan"
+            viewWorkout.setOnClickListener {
+                val intentPreviewWorkout = Intent(this, PreviewWorkoutPlanBoundary::class.java)
+                startActivity(intentPreviewWorkout)
+            }
         }
         else {
             viewWorkout.text = "Find a workout plan"
