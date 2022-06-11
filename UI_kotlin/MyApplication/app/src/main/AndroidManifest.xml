@@ -73,6 +73,7 @@
 
         <activity android:name=".ApplicationCompleteBoundary"/>
         <activity android:name=".PreviewTrainerApplicationBoundary" />
+        <activity android:name=".PreviewWorkoutPlanBoundary" />
     </application>
 
 </manifest>

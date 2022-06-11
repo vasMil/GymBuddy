@@ -49,7 +49,7 @@ class ChooseExercisesBoundary : AppCompatActivity() {
                 Toast.makeText(this@ChooseExercisesBoundary,
                     "Workout Plan is done!", Toast.LENGTH_LONG).show()
                 WorkoutPlanBuilder.saveWorkoutPlan()
-                startActivity(Intent(this, HomePageBoundary::class.java))
+                startActivity(Intent(this, PreviewWorkoutPlanBoundary::class.java))
             }
             else {
                 startActivity(Intent(this, SetupDayOfWorkoutBoundary::class.java))
