@@ -1,0 +1,3 @@
+FindGym:
+1. Άλλαξε στο domain το Int, Int σε Long, Long
+2. Πρόσθεσε στο sequence και το domain το GeocodingService
