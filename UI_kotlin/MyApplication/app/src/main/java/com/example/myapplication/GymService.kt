@@ -1,7 +1,7 @@
 package com.example.myapplication
 
 class GymService {
-    var gyms: Array<Gym> = emptyArray();
+var gyms: Array<Gym> = emptyArray();
 
     init {
         fetchGyms()

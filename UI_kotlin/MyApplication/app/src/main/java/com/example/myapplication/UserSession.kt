@@ -11,7 +11,7 @@ object UserSession {
 
     init {
         // TODO: Delete this and make main activity the initial activity
-        athlete = authService.authUser("athlete", "athlete") as Athlete
+//        athlete = authService.authUser("athlete", "athlete") as Athlete
     }
 
     fun createSession(username: String, password: String): Boolean {

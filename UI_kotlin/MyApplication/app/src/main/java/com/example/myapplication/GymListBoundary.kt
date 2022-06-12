@@ -31,8 +31,9 @@ class GymListBoundary : AppCompatActivity() {
     inner class MyCustomAdopter2(context: Context): BaseAdapter() {
         private val mContext: Context
         private val names = arrayListOf<String>(
-            "Gym 1", "Gym 2", "Gym 3", "Gym 4"
+            "Icon", "MVP", "Patraiko", "Fintess Mall", "Studio 6"
         )
+        private var ind = 0
 
         init {
             mContext = context
@@ -43,7 +44,8 @@ class GymListBoundary : AppCompatActivity() {
             val gymlist = layoutInflater.inflate(R.layout.gym_list_item, viewGroup, false)
             val nametextView = gymlist.findViewById<TextView>(R.id.name_textView)
 
-
+            val gymName = gymlist.findViewById<TextView>(R.id.gym_name)
+            gymName.text = names[ind++]
             val report_btn = gymlist.findViewById<Button>(R.id.pick_gym_btn)
             report_btn.text = "Pick"
             report_btn.setOnClickListener { view ->

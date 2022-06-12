@@ -42,7 +42,7 @@ class GymsInAreaBoundary : AppCompatActivity() {
 
     private fun handleGymChoice(gymIndex: Int) {
         val gym = gymsNearby[gymIndex]
-        val intentMap = Intent(this, HoursListBoundary::class.java)
+        val intentMap = Intent(this, MapBoundary::class.java)
         intentMap.putExtra("gym", gym)
         startActivity(intentMap)
     }

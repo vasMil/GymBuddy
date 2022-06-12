@@ -43,10 +43,7 @@
             android:name=".UploadDocumentsBoundary"
             android:exported="false" />
         <activity
-            android:name=".Ranking"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".HomePageBoundary"
             android:exported="true" />
         <activity
             android:name=".RegisterAttemptBoundary"
@@ -65,7 +62,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".HomePageBoundary"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
