@@ -11,58 +11,58 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
-            android:name=".ReasonOfDenialBoundary" />
+            android:name=".boundaries.ReasonOfDenialBoundary" />
         <activity
-            android:name=".TrainerProfileBoundary"
+            android:name=".boundaries.TrainerProfileBoundary"
             android:exported="false" />
         <activity
-            android:name=".TrainersListBoundary"
+            android:name=".boundaries.TrainersListBoundary"
             android:exported="false" />
         <activity
-            android:name=".HoursListBoundary"
+            android:name=".boundaries.HoursListBoundary"
             android:exported="false" />
         <activity
-            android:name=".GymListBoundary"
+            android:name=".boundaries.GymListBoundary"
             android:exported="false" />
         <activity
-            android:name=".WorkoutPageBoundary"
+            android:name=".boundaries.WorkoutPageBoundary"
             android:exported="false" />
         <activity
-            android:name=".LoginBoundary"
+            android:name=".boundaries.LoginBoundary"
             android:exported="false" />
         <activity
-            android:name=".UserProfile"
+            android:name=".boundaries.UserProfile"
             android:exported="false" />
         <activity
-            android:name=".GymsInAreaBoundary"
+            android:name=".boundaries.GymsInAreaBoundary"
             android:exported="false" />
         <activity
-            android:name=".MapBoundary"
+            android:name=".boundaries.MapBoundary"
             android:exported="false" />
         <activity
-            android:name=".UploadDocumentsBoundary"
+            android:name=".boundaries.UploadDocumentsBoundary"
             android:exported="false" />
         <activity
-            android:name=".HomePageBoundary"
+            android:name=".boundaries.HomePageBoundary"
             android:exported="true" />
         <activity
-            android:name=".RegisterAttemptBoundary"
+            android:name=".boundaries.RegisterAttemptBoundary"
             android:exported="false" />
         <activity
-            android:name=".Leaderboard"
+            android:name=".entities.Leaderboard"
             android:exported="false" />
         <activity
-            android:name=".LeaderboardBoundary"
+            android:name=".boundaries.LeaderboardBoundary"
             android:exported="false" />
         <activity
-            android:name=".ReportListBoundary"
+            android:name=".boundaries.ReportListBoundary"
             android:exported="false" />
         <activity
-            android:name=".PreviewReportBoundary"
+            android:name=".boundaries.PreviewReportBoundary"
             android:exported="false" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".boundaries.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -70,17 +70,18 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ChooseExerciseBoundary" />
-        <activity android:name=".ChooseCategoryBoundary" />
-        <activity android:name=".FindWorkoutPlanBoundary" />
-        <activity android:name=".CreateWorkoutPlanBoundary" />
-        <activity android:name=".SetupDayOfWorkoutBoundary" />
-        <activity android:name=".ChooseExercisesBoundary" />
-        <activity android:name=".Request_List_Boundary" android:exported="false" />
+        <activity android:name=".boundaries.ChooseExerciseBoundary" />
+        <activity android:name=".boundaries.ChooseCategoryBoundary" />
+        <activity android:name=".boundaries.FindWorkoutPlanBoundary" />
+        <activity android:name=".boundaries.CreateWorkoutPlanBoundary" />
+        <activity android:name=".boundaries.SetupDayOfWorkoutBoundary" />
+        <activity android:name=".boundaries.ChooseExercisesBoundary" />
+        <activity android:name=".boundaries.Request_List_Boundary" android:exported="false" />
 
-        <activity android:name=".ApplicationCompleteBoundary"/>
-        <activity android:name=".PreviewTrainerApplicationBoundary" />
-        <activity android:name=".PreviewWorkoutPlanBoundary" />
+        <activity android:name=".boundaries.ApplicationCompleteBoundary"/>
+        <activity android:name=".boundaries.PreviewTrainerApplicationBoundary" />
+        <activity android:name=".boundaries.PreviewWorkoutPlanBoundary" />
+        <activity android:name=".boundaries.AdminHomepage" />
 <!--        <activity android:name=".ReportList" />-->
     </application>
 
